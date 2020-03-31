@@ -7,10 +7,7 @@
     "watch": "node-sass sass/main.scss dist/css/style.prefix.css -w",
     "server:prod": "live-server --port=8181 --browser=chrome",
     "start": "concurrently \"npm run server:prod\" \"npm run watch-dev\"",
-    "compile": "node-sass sass/main.scss dist/css/style.comp.css -w",
-    "concat": "concat -o dist/css/style.concat.css dist/css/all.css dist/css/style.comp.css",
-    "prefix": "postcss dist/css/style.concat.css --use autoprefixer -o dist/css/style.prefix.css",
-    "build": "npm-run-all compiler:sass concat:css prefix:css"
+    "compile": "node-sass sass/main.scss dist/css/style.comp.css -w"
   },
   "author": "",
   "license": "ISC",
