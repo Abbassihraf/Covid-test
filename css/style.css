@@ -112,7 +112,7 @@ nav ul li a {
     line-height: 30px;
     margin-bottom: 40px; }
 
-.button {
+button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -120,7 +120,7 @@ nav ul li a {
   background-color: rgba(150, 197, 220, 0.5);
   border: none;
   color: #1078AD;
-  padding: 5px 184px;
+  padding: 8px 184px;
   border: 2px solid #1078AD;
   border-radius: 10px;
   text-align: center;
@@ -128,7 +128,7 @@ nav ul li a {
   font-size: 16px;
   font-weight: bolder; }
 
-.button:hover {
+button:hover {
   color: #FFFFFF;
   background-color: #1078AD; }
 

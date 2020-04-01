@@ -1,4 +1,4 @@
-.button {
+button {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -6,7 +6,7 @@
     background-color:rgba($color: $color-accent, $alpha: .5);
     border: none;
     color: $color-primary;
-    padding: 5px 184px;
+    padding: 8px 184px;
     border: 2px solid $color-primary;
     border-radius: 10px;
     text-align: center;
@@ -14,7 +14,7 @@
     font-size: 16px;
     font-weight: bolder;
   }
-  .button:hover{
+  button:hover{
       color: $footer-color;
       background-color: $color-primary;
   }
