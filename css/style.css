@@ -324,3 +324,120 @@ button:hover {
   background-color: #1078AD;
   width: 100%;
   height: 35px; }
+
+.protection img {
+  width: 105px;
+  height: 105px;
+  margin-bottom: 40px;
+  margin-top: 20px; }
+
+.protection__title {
+  text-align: center;
+  color: #1078AD;
+  padding-top: 40px;
+  margin-right: 120px;
+  margin-left: 120px; }
+
+.protection__wrapper {
+  margin: 40px 120px 40px 120px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 24% 10% 24% 10% 24% 10% 24% 10%; }
+
+.protection__wrapper--icn1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-left: auto;
+  margin-right: auto; }
+
+.protection__icn1--title {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+  font-size: 14px;
+  color: #1078AD;
+  font-weight: 700; }
+
+.protection__wrapper--icn2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: auto;
+  margin-right: auto; }
+
+.protection__icn2--title {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  font-size: 14px;
+  color: #1078AD;
+  font-weight: 700; }
+
+.protection__wrapper--icn3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin-left: auto;
+  margin-right: auto; }
+
+.protection__icn3--title {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  text-align: center;
+  font-size: 14px;
+  color: #1078AD;
+  font-weight: 700; }
+
+.protection__wrapper--icn4 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-left: auto;
+  margin-right: auto; }
+
+.protection__icn4--title {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  text-align: center;
+  font-size: 14px;
+  color: #1078AD;
+  font-weight: 700; }
+
+.protection__wrapper--icn5 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-left: auto;
+  margin-right: auto; }
+
+.protection__icn5--title {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  text-align: center;
+  font-size: 14px;
+  color: #1078AD;
+  font-weight: 700; }
+
+.protection__wrapper--icn6 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin-left: auto;
+  margin-right: auto; }
+
+.protection__icn6--title {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  text-align: center;
+  font-size: 14px;
+  color: #1078AD;
+  font-weight: 700; }
+
+.protection__wrapper--icn7 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-left: auto;
+  margin-right: auto; }
+
+.protection__icn7--title {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  text-align: center;
+  font-size: 14px;
+  color: #1078AD;
+  font-weight: 700; }
