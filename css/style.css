@@ -278,3 +278,49 @@ button:hover {
     margin-right: auto; }
   .heroFooter__button {
     width: 40%; }
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  margin: 0 160px 40px;
+  text-align: center; }
+
+.footer__logo {
+  display: block;
+  margin: 20px auto; }
+
+.footer__left--title {
+  color: #1078AD;
+  font-weight: bold;
+  font-size: 20px; }
+
+.footer__left--para {
+  font-weight: 700; }
+
+.footer__left--num {
+  font-size: 20px;
+  color: #369D53;
+  font-weight: 700; }
+
+.footer__right--list {
+  font-size: 22px;
+  margin-top: 40px; }
+
+.footer__right--acceuil {
+  font-weight: bold;
+  border-bottom: 1px solid #96C5DC;
+  padding-bottom: 10px; }
+
+.footer__right--conseils {
+  border-bottom: 1px solid #96C5DC;
+  padding-bottom: 10px; }
+
+.acc {
+  color: #1078AD;
+  font-weight: 700; }
+
+.bottom-footer {
+  background-color: #1078AD;
+  width: 100%;
+  height: 35px; }
