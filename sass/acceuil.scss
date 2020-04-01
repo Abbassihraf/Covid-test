@@ -1,0 +1,44 @@
+.infoMedicale {
+    background-color: $color-secondary;
+    &--title {
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-primary;
+        padding-top: 20px;
+        font-size: 1.6rem;
+    }
+    &--para {
+        text-align: center;
+        padding: 10px 240px 20px;
+        line-height: 1.6em;
+
+    }
+}
+.heroHeader {
+    margin: 40px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    &__right--img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+    }
+    &__right--title {
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        font-weight: 700;
+        color: $color-primary;
+        padding-bottom: 30px;
+    }
+    &__right--para {
+        font-size: 18px;
+        color: $color-gry;
+        text-align: center;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+}
