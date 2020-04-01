@@ -261,3 +261,20 @@ button:hover {
     margin-left: 32px; }
   .recommandations__wrapper--link:hover {
     color: #F4CF1B; }
+
+.heroFooter {
+  background-color: #96C5DC;
+  margin-top: -10px;
+  padding-bottom: 20px; }
+  .heroFooter__title {
+    padding-top: 20px;
+    color: #FFFFFF;
+    text-align: center; }
+  .heroFooter__emoji {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .heroFooter__button {
+    width: 40%; }
