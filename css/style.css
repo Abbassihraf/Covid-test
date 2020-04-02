@@ -126,7 +126,8 @@ button {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  font-weight: bolder; }
+  font-weight: bolder;
+  cursor: pointer; }
 
 button:hover {
   color: #FFFFFF;
@@ -473,5 +474,23 @@ button:hover {
 
 .transmition__title {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
+  color: #1078AD;
+  font-weight: 700; }
+
+.transmition__wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 80px 200px; }
+
+.transmition__left--para, .transmition__right--para {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
   color: #1078AD; }
+
+.transmition__left--img, .transmition__right--img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }

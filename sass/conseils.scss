@@ -161,8 +161,26 @@
 .transmition{
     &__title{
         text-align: center;
-        font-size: 24px;
+        font-size: 28px;
         color: $color-primary;
+        font-weight: 700;
     }
-
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 80px 200px;
+    }
+    &__left--para,&__right--para{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        color: $color-primary;
+        
+    }
+    &__left--img,&__right--img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
 }
