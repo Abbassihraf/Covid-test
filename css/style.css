@@ -441,3 +441,32 @@ button:hover {
   font-size: 14px;
   color: #1078AD;
   font-weight: 700; }
+
+.informations {
+  background-color: rgba(150, 197, 220, 0.4);
+  padding-bottom: 40px; }
+  .informations__title {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1078AD; }
+  .informations__para {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1A519E; }
+  .informations__link {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 700;
+    background-image: url(/Design/Assets/png/btn-bg.png);
+    width: 424px; }
+  .informations__link:hover {
+    color: #F4CF1B; }

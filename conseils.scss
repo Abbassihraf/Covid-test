@@ -120,3 +120,38 @@
     }
 
 }
+
+
+.informations{
+    background-color: rgba($color: $color-accent, $alpha: .4);
+    padding-bottom: 40px;
+       &__title{
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        color: $color-primary;
+    }
+    &__para{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: #1A519E;
+    }
+    &__link{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        text-decoration: none;
+        color: $footer-color;
+        text-align: center;
+        font-weight: 700;
+        background-image: url(/Design/Assets/png/btn-bg.png);
+        width: 424px;
+    }
+    &__link:hover{
+        color: $color-secondary;
+    }
+}
