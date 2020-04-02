@@ -236,6 +236,34 @@ button:hover {
     letter-spacing: 0;
     color: #1078AD; }
 
+@media only screen and (max-width: 575px) {
+  .symptomes {
+    display: grid;
+    grid-template-rows: 16% 40% 40%;
+    margin: 0px; }
+    .symptomes__title {
+      font-size: 26px;
+      line-height: 1.2em;
+      font-weight: 900;
+      margin-top: auto;
+      margin-bottom: auto; }
+    .symptomes__symp1--img, .symptomes__symp2--img, .symptomes__symp3--img, .symptomes__symp4--img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      height: 20vw;
+      padding-top: 10px; }
+    .symptomes__symp1--title, .symptomes__symp2--title, .symptomes__symp3--title, .symptomes__symp4--title {
+      font-size: 16px;
+      text-align: center;
+      margin: 0px;
+      padding: 0px; }
+    .symptomes__symp2--title, .symptomes__symp4--title {
+      line-height: 1.2em;
+      margin-left: 40px;
+      margin-right: 40px; } }
+
 .war {
   color: #F4CF1B;
   font-weight: bold;
