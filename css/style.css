@@ -444,7 +444,8 @@ button:hover {
 
 .informations {
   background-color: rgba(150, 197, 220, 0.4);
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  margin-bottom: 20px; }
   .informations__title {
     padding-top: 20px;
     text-align: center;
