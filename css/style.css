@@ -165,6 +165,12 @@ nav ul li a {
 @media (max-width: 768px) {
   .logo {
     padding-left: 40px; }
+  .infoMedicale--title {
+    font-size: 32px;
+    font-weight: 700; }
+  .infoMedicale--para {
+    padding: 0px 40px 40px;
+    font-size: 24px; }
   .heroHeader {
     display: grid;
     grid-template-columns: 50% 50%;
