@@ -698,6 +698,16 @@ button:hover {
   .informations__link:hover {
     color: #F4CF1B; }
 
+@media only screen and (max-width: 575px) {
+  .informations__para {
+    line-height: 1.4em;
+    margin: 20px 40px; }
+  .informations__link {
+    width: 240px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto; } }
+
 .transmition__title {
   text-align: center;
   font-size: 28px;
