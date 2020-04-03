@@ -284,3 +284,26 @@
         margin-bottom: 20px;
     }
 }
+@media only screen and (max-width: 575px){
+    .transmition{
+        &__title{
+            line-height: 1.4em;
+            margin-bottom: 40px;
+        }
+        &__wrapper{
+            margin: 20px 20px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+
+        }
+        &__left--img,&__right--img{
+            margin: auto;
+        }
+        &__left--para,&__right--para{
+            margin: 20px auto;
+            line-height: 1.4em;
+            padding: 0px 10px;
+        }
+    }
+}

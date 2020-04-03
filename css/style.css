@@ -730,3 +730,19 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; }
+
+@media only screen and (max-width: 575px) {
+  .transmition__title {
+    line-height: 1.4em;
+    margin-bottom: 40px; }
+  .transmition__wrapper {
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; }
+  .transmition__left--img, .transmition__right--img {
+    margin: auto; }
+  .transmition__left--para, .transmition__right--para {
+    margin: 20px auto;
+    line-height: 1.4em;
+    padding: 0px 10px; } }
