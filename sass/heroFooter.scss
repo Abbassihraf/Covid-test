@@ -4,8 +4,10 @@
     padding-bottom: 20px;
     &__title{
         padding-top: 20px;
-        color: $footer-color;
+        color: $color-primary;
         text-align: center;
+        font-size: 24px;
+        font-weight: 900;
     }
     &__emoji{
         padding-top: 20px;
@@ -16,5 +18,22 @@
     }
     &__button{
         width: 40%;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .heroFooter{
+        &__title{
+            line-height: 1.4em;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+        &__emoji{
+            margin-bottom: 10px;
+        }
+        &__button{
+            width: 80%;
+        }
     }
 }

@@ -396,8 +396,10 @@ button:hover {
   padding-bottom: 20px; }
   .heroFooter__title {
     padding-top: 20px;
-    color: #FFFFFF;
-    text-align: center; }
+    color: #1078AD;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900; }
   .heroFooter__emoji {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -406,6 +408,17 @@ button:hover {
     margin-right: auto; }
   .heroFooter__button {
     width: 40%; }
+
+@media only screen and (max-width: 575px) {
+  .heroFooter__title {
+    line-height: 1.4em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px; }
+  .heroFooter__emoji {
+    margin-bottom: 10px; }
+  .heroFooter__button {
+    width: 80%; } }
 
 .footer__wrapper {
   display: grid;
