@@ -58,7 +58,7 @@ nav ul li a {
   ul {
     position: fixed;
     width: 100%;
-    height: 310px;
+    height: 256px;
     background-color: #B6D6E6;
     top: 80px;
     left: -100%;
@@ -82,8 +82,9 @@ nav ul li a {
     left: 0; } }
 
 /*nav barre*/
+/*Version desktop*/
 .infoMedicale {
-  background-color: #F4CF1B; }
+  background: #F4CF1B; }
   .infoMedicale--title {
     text-align: center;
     text-transform: uppercase;
@@ -120,11 +121,13 @@ nav ul li a {
     line-height: 30px;
     margin-bottom: 40px; }
 
-@media only screen and (max-width: 575px) {
+/*END Version desktop*/
+/*Version mobile*/
+@media (max-width: 575px) {
   .logo {
     padding: 10px 24px; }
   .infoMedicale--title {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.4em;
     font-weight: 700; }
   .infoMedicale--para {
@@ -134,7 +137,7 @@ nav ul li a {
     text-align: justify;
     text-align-last: center; }
   .heroHeader {
-    margin: 0px;
+    margin: 0;
     display: grid;
     grid-template-columns: 100%; }
     .heroHeader__left--img img {
@@ -157,6 +160,22 @@ nav ul li a {
       font-size: 20px;
       font-weight: 900;
       line-height: 35px; } }
+
+/*END Version mobile*/
+@media (max-width: 768px) {
+  .logo {
+    padding-left: 40px; }
+  .heroHeader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: 40px 40px; }
+    .heroHeader__left--img img {
+      width: 344px;
+      height: 320px; }
+    .heroHeader__right--title {
+      font-size: 28px;
+      font-weight: 900; } }
 
 button {
   display: block;
@@ -186,7 +205,12 @@ button:hover {
     margin-right: auto;
     padding: 4px;
     width: 80%;
-    margin-bottom: 20px; } }
+    margin-bottom: 40px; } }
+
+@media (max-width: 768px) {
+  button {
+    padding: 2px 40px;
+    width: 80%; } }
 
 .symptomes {
   margin: 0 80px 80px;

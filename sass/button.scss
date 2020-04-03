@@ -3,11 +3,11 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color:rgba($color: $color-accent, $alpha: .5);
+    background-color:rgba($color: $colorA, $alpha: .5);
     border: none;
-    color: $color-primary;
+    color: $colorP;
     padding: 8px 184px;
-    border: 2px solid $color-primary;
+    border: 2px solid $colorP;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
@@ -16,8 +16,8 @@ button {
     cursor: pointer;
   }
   button:hover{
-      color: $footer-color;
-      background-color: $color-primary;
+      color: $colorW;
+      background-color: $colorP;
   }
 
   @media only screen and (max-width: 575px){
@@ -27,7 +27,14 @@ button {
           margin-right: auto;
           padding: 4px;
           width: 80%;
-          margin-bottom: 20px;
+          margin-bottom: 40px;
 
+      }
+  }
+
+  @media (max-width: 768px){
+      button{
+          padding: 2px 40px;
+          width: 80%;
       }
   }

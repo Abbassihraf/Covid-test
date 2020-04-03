@@ -7,7 +7,7 @@
     }
     &__title{
         text-align: center;
-        color: $color-primary;
+        color: $colorP;
         padding-top: 40px;
         margin-right: 120px;
         margin-left: 120px
@@ -30,7 +30,7 @@
         grid-row: 2/3;
         text-align: center;
         font-size: 14px;
-        color: $color-primary;
+        color: $colorP;
         font-weight: 700;
     }
     &__wrapper--icn2{
@@ -44,7 +44,7 @@
         grid-row: 2/3;
         text-align: center;
         font-size: 14px;
-        color: $color-primary;
+        color: $colorP;
         font-weight: 700;
     }
     &__wrapper--icn3{
@@ -58,7 +58,7 @@
         grid-row: 2/3;
         text-align: center;
         font-size: 14px;
-        color: $color-primary;
+        color: $colorP;
         font-weight: 700;
     }
     &__wrapper--icn4{
@@ -72,7 +72,7 @@
         grid-row: 4/5;
         text-align: center;
         font-size: 14px;
-        color: $color-primary;
+        color: $colorP;
         font-weight: 700;
     }
     &__wrapper--icn5{
@@ -86,7 +86,7 @@
         grid-row: 4/5;
         text-align: center;
         font-size: 14px;
-        color: $color-primary;
+        color: $colorP;
         font-weight: 700;
 
     }
@@ -101,7 +101,7 @@
         grid-row: 4/5;
         text-align: center;
         font-size: 14px;
-        color: $color-primary;
+        color: $colorP;
         font-weight: 700;
     }
     &__wrapper--icn7{
@@ -115,7 +115,7 @@
         grid-row: 6/7;
         text-align: center;
         font-size: 14px;
-        color: $color-primary;
+        color: $colorP;
         font-weight: 700;
     }
 
@@ -208,7 +208,7 @@
 
 
 .informations{
-    background-color: rgba($color: $color-accent, $alpha: .4);
+    background-color: rgba($color: $colorA, $alpha: .4);
     padding-bottom: 40px;
     margin-bottom: 20px;
        &__title{
@@ -216,7 +216,7 @@
         text-align: center;
         font-weight: 700;
         font-size: 24px;
-        color: $color-primary;
+        color: $colorP;
     }
     &__para{
         text-align: center;
@@ -231,14 +231,14 @@
         padding-top: 2px;
         padding-bottom: 2px;
         text-decoration: none;
-        color: $footer-color;
+        color: $colorW;
         text-align: center;
         font-weight: 700;
         background-image: url(/Design/Assets/png/btn-bg.png);
         width: 424px;
     }
     &__link:hover{
-        color: $color-secondary;
+        color: $colorS;
     }
 }
 @media only screen and (max-width: 575px){
@@ -262,7 +262,7 @@
     &__title{
         text-align: center;
         font-size: 28px;
-        color: $color-primary;
+        color: $colorP;
         font-weight: 700;
     }
     &__wrapper{
@@ -274,7 +274,7 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        color: $color-primary;
+        color: $colorP;
         
     }
     &__left--img,&__right--img{
