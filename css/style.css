@@ -428,6 +428,30 @@ button:hover {
   .recommandations a {
     margin: 0px; } }
 
+@media (max-width: 768px) {
+  .recommandations__appelez {
+    margin-right: 110px; }
+  .recommandations__wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    margin: 0px;
+    width: 100%; }
+  .recommandations__wrapper--rec1, .recommandations__wrapper--rec2, .recommandations__wrapper--rec3, .recommandations__wrapper--rec4, .recommandations__wrapper--rec5 {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4em;
+    padding-bottom: 30px; }
+  .recommandations__para {
+    margin: 0px;
+    width: 100%;
+    text-align: center; }
+  .recommandations__wrapper--num1, .recommandations__wrapper--num2, .recommandations__wrapper--num3, .recommandations__wrapper--num4 {
+    margin: auto; }
+  .recommandations__wrapper--link {
+    margin: 0px; } }
+
 .heroFooter {
   background-color: #96C5DC;
   margin-top: -10px;
