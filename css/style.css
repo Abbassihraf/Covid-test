@@ -162,7 +162,7 @@ nav ul li a {
       line-height: 35px; } }
 
 /*END Version mobile*/
-@media (min-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   .logo {
     padding-left: 40px; }
   .infoMedicale--title {
@@ -213,7 +213,7 @@ button:hover {
     width: 80%;
     margin-bottom: 40px; } }
 
-@media (max-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   button {
     padding: 2px 40px;
     width: 80%; } }
@@ -302,7 +302,7 @@ button:hover {
       margin-left: 40px;
       margin-right: 40px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   .symptomes img {
     height: 154px; }
   .symptomes {
@@ -455,7 +455,7 @@ button:hover {
   .recommandations a {
     margin: 0px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   .recommandations__appelez {
     margin-right: 110px; }
   .recommandations__wrapper {
@@ -509,7 +509,7 @@ button:hover {
   .heroFooter__button {
     width: 80%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   .heroFooter__title {
     margin-left: 40px;
     margin-right: 40px;
@@ -578,13 +578,15 @@ button:hover {
   .footer__left--para {
     font-size: 0.8em; } }
 
-@media (min-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   .footer__logo {
     margin-top: 40px;
     margin-bottom: 40px; }
   .footer__wrapper {
     display: grid;
-    grid-template-columns: 100%; } }
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    margin: 20px 40px; } }
 
 .protection img {
   width: 105px;
@@ -767,7 +769,7 @@ button:hover {
     margin: auto 70px;
     line-height: 1.4em; } }
 
-@media (min-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   .protection__title {
     margin: 0px;
     font-size: 26px; }
@@ -873,7 +875,7 @@ button:hover {
     margin-left: auto;
     margin-right: auto; } }
 
-@media (min-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   .informations__title {
     font-size: 40px;
     font-weight: 700; }
@@ -923,7 +925,7 @@ button:hover {
     line-height: 1.4em;
     padding: 0px 10px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 575px) and (max-width: 1024px) {
   .transmition__wrapper {
     margin: 40px 80px; }
   .transmition__left--para, .transmition__right--para {

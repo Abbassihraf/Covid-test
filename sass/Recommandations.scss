@@ -165,7 +165,7 @@
 }
 }
 
-@media (min-width: 768px){
+@media (min-width: 575px)and(max-width: 1024px){
     .recommandations{
         &__appelez{
             margin-right: 110px;
