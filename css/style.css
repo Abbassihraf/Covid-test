@@ -846,6 +846,17 @@ button:hover {
     margin-left: auto;
     margin-right: auto; } }
 
+@media (min-width: 768px) {
+  .informations__title {
+    font-size: 40px;
+    font-weight: 700; }
+  .informations__para {
+    font-size: 24px;
+    line-height: 1.4em;
+    margin: 20px 40px; }
+  .informations__link {
+    width: 30%; } }
+
 .transmition__title {
   text-align: center;
   font-size: 28px;
