@@ -99,3 +99,38 @@
     }
     
 }
+
+@media (min-width: 768px){
+    .symptomes img{
+        height: 154px;
+    }
+    .symptomes{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 25% 15% 25% 15%;
+        margin: 20px;
+        &__title{
+            font-size: 32px;
+            margin-bottom: 0px;
+        }
+        &__symp1{
+            margin: auto;
+            grid-area:2/1;
+            grid-row: 2/4;
+        }
+        &__symp2{
+            grid-area:2/2;
+            grid-row: 2/4;
+        }
+        &__symp3{
+            margin: auto;
+            grid-area:4/1;
+            grid-row: 4/6;
+        }
+        &__symp4{
+            margin: auto;
+            grid-area:4/2;
+            grid-row: 4/6;
+        }
+    }
+}
