@@ -482,6 +482,16 @@ button:hover {
   .heroFooter__button {
     width: 80%; } }
 
+@media (max-width: 768px) {
+  .heroFooter__title {
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.4em;
+    font-weight: 700;
+    font-size: 26px; }
+  .heroFooter__button {
+    margin-bottom: 20px; } }
+
 .footer__wrapper {
   display: grid;
   grid-template-columns: 50% 50%;

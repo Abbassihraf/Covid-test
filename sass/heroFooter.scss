@@ -37,3 +37,18 @@
         }
     }
 }
+
+@media (max-width: 768px){
+    .heroFooter{
+        &__title{
+            margin-left: 40px;
+            margin-right: 40px;
+            line-height: 1.4em;
+            font-weight: 700;
+            font-size: 26px;
+        }
+        &__button{
+            margin-bottom: 20px;
+        }
+    }
+}
