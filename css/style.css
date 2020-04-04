@@ -444,7 +444,7 @@ button:hover {
     line-height: 1.4em;
     padding-bottom: 30px; }
   .recommandations__para {
-    margin: 0px;
+    margin: 0px 20px;
     width: 100%;
     text-align: center; }
   .recommandations__wrapper--num1, .recommandations__wrapper--num2, .recommandations__wrapper--num3, .recommandations__wrapper--num4 {
