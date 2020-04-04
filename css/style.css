@@ -922,3 +922,10 @@ button:hover {
     margin: 20px auto;
     line-height: 1.4em;
     padding: 0px 10px; } }
+
+@media (min-width: 768px) {
+  .transmition__wrapper {
+    margin: 40px 80px; }
+  .transmition__left--para, .transmition__right--para {
+    margin: 20px;
+    line-height: 1.4em; } }
