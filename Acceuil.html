@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,9 @@
         <link
             rel="stylesheet"
             href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
 
         <title>مرض الفيروس التاجي - اختبر أعراض الفيروس التاجي 19</title>
     </head>
@@ -23,10 +26,13 @@
             <label><img class="logo" src="/Design/Assets/png/logo__sante-63.png" alt="logo"></label>
             <ul>
                 <li>
-                    <a class="conseils" href="/conseils.html">Conseils</a>
+                    <a id="Con" class="conseils" href="/conseils.html">Conseils</a>
                 </li>
                 <li>
                     <a class="active" href="/Acceuil.html">Acceuil</a>
+                </li>
+                <li>
+                    <a id="Ar" class="flag-icon-background flag-icon-ma"></a>
                 </li>
             </ul>
         </nav>
@@ -66,7 +72,10 @@
             <h3 class="symptomes__title">Quels sont les symptômes à surveiller ?
             </h3>
             <div class="symptomes__symp1">
-                <img src="/Design/Assets/png/Calque -3.png" alt="Fièvre" class="symptomes__symp1--img">
+                <img
+                    src="/Design/Assets/png/Calque -3.png"
+                    alt="Fièvre"
+                    class="symptomes__symp1--img">
                 <p class="symptomes__symp1--title">Fièvre</p>
             </div>
             <div class="symptomes__symp2">
@@ -142,31 +151,38 @@
         </section>
         <footer class="footer">
             <span >
-                <img class="footer__logo" src="/Design/Assets/png/logo__sante-63.png" alt="logo">
+                <img
+                    class="footer__logo"
+                    src="/Design/Assets/png/logo__sante-63.png"
+                    alt="logo">
             </span>
             <div class="footer__wrapper">
-            <div class="footer__left">
-                <h5 class="footer__left--title">Contacts utiles</h5>
-                <p class="footer__left--para">Numéro économique - Allo veille épidémiologique
-                </p>
-                <p class="footer__left--num">080 100 47 47
-                </p>
-                <p class="footer__left--para">Aide médicale urgente - Allo SAMU
-                </p>
-                <p class="footer__left--num">141
-                </p>
-                <p class="footer__left--para">la plateforme téléphonique- Allo 300
-                </p>
-                <p class="footer__left--num">300
-                </p>
+                <div class="footer__left">
+                    <h5 class="footer__left--title">Contacts utiles</h5>
+                    <p class="footer__left--para">Numéro économique - Allo veille épidémiologique
+                    </p>
+                    <p class="footer__left--num">080 100 47 47
+                    </p>
+                    <p class="footer__left--para">Aide médicale urgente - Allo SAMU
+                    </p>
+                    <p class="footer__left--num">141
+                    </p>
+                    <p class="footer__left--para">la plateforme téléphonique- Allo 300
+                    </p>
+                    <p class="footer__left--num">300
+                    </p>
+                </div>
+                <div class="footer__right">
+                    <ul class="footer__right--list">
+                        <li class="footer__right--acceuil">
+                            <a class="acc" href="/Acceuil.html">Acceuil</a>
+                        </li>
+                        <li class="footer__right--conseils">
+                            <a href="">Conseils</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer__right">
-                <ul class="footer__right--list">
-                    <li class="footer__right--acceuil"><a class="acc" href="/Acceuil.html">Acceuil</a></li>
-                    <li class="footer__right--conseils"><a href="">Conseils</a></li>
-                </ul>
-            </div>
-        </div>
         </footer>
         <div class="bottom-footer"></div>
     </body>
