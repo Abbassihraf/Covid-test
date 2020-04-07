@@ -10,7 +10,7 @@
     "prefix": "postcss --use autoprefix -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css",
     "compress": "node-sass css/style.concat.css css/style.css --output-style compressed",
     "build": "npm-run-all compile concat prefix compress"
-  },
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abbassihraf/Covitest.git"
