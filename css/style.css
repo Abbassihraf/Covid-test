@@ -931,3 +931,30 @@ button:hover {
   .transmition__left--para, .transmition__right--para {
     margin: 20px;
     line-height: 1.4em; } }
+
+.error__background {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  height: auto; }
+
+.error__title {
+  color: #1078AD;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.error__button {
+  width: 20%;
+  background-color: #1078AD;
+  padding: 8px 40px;
+  border-radius: 0px; }
+
+.error__button:hover {
+  border: 2px solid #96C5DC;
+  background-color: #96C5DC; }
+
+.error__button--link {
+  font-size: 24px;
+  color: #FFFFFF; }
