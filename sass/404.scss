@@ -28,3 +28,19 @@
         color: $colorW;
     }
 }
+
+@media (max-width: 575px){
+    .error{
+        &__background{
+            width: 80%;
+            height: 100%;
+        }
+        &__title{
+            font-size: 32px;
+        }
+        &__button{
+            width: 60%;
+        }
+    }
+
+}
