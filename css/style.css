@@ -967,3 +967,11 @@ button:hover {
     font-size: 32px; }
   .error__button {
     width: 60%; } }
+
+@media (min-width: 575px) and (max-width: 1024px) {
+  .error__background {
+    width: 80%; }
+  .error__title {
+    font-size: 40px; }
+  .error__button {
+    width: 60%; } }
