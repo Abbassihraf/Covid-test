@@ -36,34 +36,73 @@
                 </li>
             </ul>
         </nav>
-        <div id="stepProgressBar">
-            <div class="step">
-                <p class="step-text">Informations</p>
-                <div class="bullet"></div>
+        <div class="wrapper">
+        <section class="stepper">
+            <h1 class="select">Informations</h1>
+            <h1>Questionnaire</h1>
+            <h1>Résultats</h1>
+        </section>
+    </div>
+
+
+        <section class="Préambule">
+    
+            <h1>Préambule</h1>
+    
+            <p class="Préambule--para1">L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer à
+                fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus
+                COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à disposition
+                dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.</p>
+    
+            <hr>
+            <p class="Préambule--para2">Cette application ne substitue pas votre médecin qui est plus apte à vous donner plus de précision.
+                Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19.
+            </p>
+    
+        </section>
+    
+        <button class="start-btn">Démarrer le test</button>
+    
+        <section class="questionnaire">
+    
+            <div class="progress">
+                <h3><span class="question-number">1</span>/22</h3>
+                <div class="progress__bar">
+                    <div class="bar"></div>
+                </div>
             </div>
-            <div class="step">
-                <p class="step-text">Questionnaire</p>
-                <div class="bullet"></div>
+            <h1 class="question">Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</h1>
+    
+            <div class="answer-inputs">
+    
+    
+    
+                <!-- <input type="number"  id="degrés" min="34" max="42" placeholder="34 - 42">
+                <span class="input-span">degrés</span> -->
+    
+                <div>
+                    <input type="radio" id="oui">
+                    <label for="oui">
+                        <i class="fas fa-check"></i>
+                        <span>Oui</span> </label>
+                </div>
+    
+                <div>
+                    <input type="radio" id="non">
+                    <label for="non">
+                        <i class="fas fa-times"></i>
+                        <span>Non</span>
+                    </label>
+                </div>
             </div>
-            <div class="step">
-                <p class="step-text">Résultats</p>
-                <div class="bullet"></div>
+    
+    
+            <div class="btn-container">
+                <button class="previous">Précédent</button>
+                <button class="next">Suivant</button>
             </div>
-        </div>
-        <div id="main">
-            <p id="content"  class="text-center">Step Number 1</p>
-            <button id="previousBtn" >Previous</button>
-            <button id="nextBtn">Next</button>
-            <button id="finishBtn" >Finish</button>
-        </div>
-        </div>
-
-
-
-
-
-
-
+        </section>
+    
         <script src="/Js/stepper.js"></script>
     </body>
 </html>
