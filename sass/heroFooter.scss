@@ -17,8 +17,11 @@
         margin-right: auto;
     }
     &__button{
+        color: $colorP;
         width: 40%;
     }
+
+
 }
 
 @media only screen and (max-width: 575px){
