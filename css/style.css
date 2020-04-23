@@ -1293,4 +1293,10 @@ button:hover {
   .start-btn {
     font-size: 24px;
     width: 40%;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .progress h3 {
+    display: inherit; }
+  .questionnaire {
+    width: 80%; }
+  .btn-container button {
+    width: 80%; } }
