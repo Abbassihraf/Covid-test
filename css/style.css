@@ -1087,6 +1087,8 @@ button:hover {
     width: 80%;
     margin: 20px auto; }
   .questionnaire .progress {
+    margin: auto;
+    width: 99%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1207,7 +1209,28 @@ button:hover {
       width: 80%;
       margin: 10px auto; }
   .start-btn {
-    width: 50%; } }
+    width: 50%; }
+  .questionnaire {
+    width: 80%; }
+    .questionnaire h1 {
+      font-size: 18px;
+      line-height: 1.4rem;
+      margin: 10px auto; }
+  .progress {
+    margin: auto;
+    width: 90%; }
+    .progress h3 {
+      margin-left: 10px;
+      margin-right: 10px; }
+  .btn-container {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .btn-container .next {
+      grid-area: 1/2; }
+    .btn-container button {
+      width: 70%; }
+  .answer-inputs {
+    width: 80%; } }
 
 @media (min-width: 575px) and (max-width: 1024px) {
   .wrapper {
