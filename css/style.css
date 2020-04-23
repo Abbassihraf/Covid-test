@@ -1113,13 +1113,15 @@ button:hover {
 .answer-inputs {
   width: 30%;
   margin: 0px auto;
-  display: grid;
-  grid-template-columns: 50% 50%; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .answer-inputs input[type="number"] {
     font-size: 16px;
     border: 2px solid #1078AD;
     padding: 10px;
-    font-weight: 600; }
+    font-weight: 600;
+    width: 55%; }
   .answer-inputs .input-span {
     width: 50%;
     text-align: center;
@@ -1135,9 +1137,9 @@ button:hover {
     background-color: #1078AD;
     color: #F4CF1B; }
   .answer-inputs label {
-    margin: 0px auto;
-    height: 64px;
-    width: 80px;
+    margin: 0px 10px;
+    height: 72px;
+    width: 88px;
     color: #1078AD;
     border-radius: 4px;
     border: 4px solid #1078AD;

@@ -167,14 +167,16 @@
 .answer-inputs {
     width: 30%;
     margin: 0px auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     input[type="number"] {
         font-size: 16px;
         border: 2px solid $colorP;
         padding: 10px;
         font-weight: 600;
+        width: 55%;
     }
 
     .input-span {
@@ -199,9 +201,9 @@
     }
 
     label {
-        margin: 0px auto;
-        height: 64px;
-        width: 80px;
+        margin: 0px 10px;
+        height: 72px;
+        width: 88px;
         color: $colorP;
         border-radius: 4px;
         border: 4px solid $colorP;
