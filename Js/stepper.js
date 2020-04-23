@@ -1,4 +1,3 @@
-
 const testBtn = document.querySelector('.start-btn')
 const questionnaire = document.querySelector('.questionnaire')
 const Préambule = document.querySelector('.Préambule')
@@ -9,13 +8,58 @@ const currentquestion = document.querySelector('.question')
 const answerInputs = document.querySelector('.answer-inputs')
 const progressBar = document.querySelector('.bar')
 const questionNumber = document.querySelector('.question-number')
+const animateBox = document.querySelector('.animation')
+
+
 
 
 testBtn.addEventListener('click', startTest)
 
+animateBox.addEventListener('change', (e) => {
+
+    const input = e.target
+
+    if (input.type === 'number') {
+
+        const number = parseFloat(input.value)
+
+        if (number >= input.min && number <= input.max) {
+
+            nextBtn.disabled = false
+
+
+
+        } else {
+
+            nextBtn.disabled = true
+
+        }
+
+
+    } else {
+        nextBtn.disabled = false
+    }
+
+
+
+
+
+})
+
 
 
 let currentQuestionIndex = 0
+
+
+function hideprevious() {
+    if (currentQuestionIndex === 0) {
+        previousBtn.classList.add('hide')
+    } else {
+        previousBtn.classList.remove('hide')
+    }
+}
+
+
 
 
 function startTest() {
@@ -24,14 +68,30 @@ function startTest() {
     testBtn.style.display = 'none'
     Préambule.style.display = 'none'
     questionnaire.style.display = 'block'
+    hideprevious()
+    nextBtn.disabled = true
+
 
 }
 
 
 nextBtn.addEventListener('click', () => {
-    currentQuestionIndex++
-    showQuestion(questions[currentQuestionIndex])
-    folowProgress(currentQuestionIndex)
+    if (currentQuestionIndex < 21) {
+        currentQuestionIndex++
+        showQuestion(questions[currentQuestionIndex])
+        folowProgress(currentQuestionIndex)
+        hideprevious()
+        transition('next')
+        nextBtn.disabled = true
+        if (currentQuestionIndex === 21) {
+            nextBtn.innerText = 'Terminer le test'
+
+        } else {
+            nextBtn.innerText = 'Suivant'
+        }
+    }
+
+
 
 })
 
@@ -39,6 +99,15 @@ previousBtn.addEventListener('click', () => {
     currentQuestionIndex--
     showQuestion(questions[currentQuestionIndex])
     folowProgress(currentQuestionIndex)
+    hideprevious()
+    transition('previous')
+    nextBtn.disabled = true
+    if (currentQuestionIndex === 21) {
+        nextBtn.innerText = 'Terminer le test'
+
+    } else {
+        nextBtn.innerText = 'Suivant'
+    }
 })
 
 
@@ -54,21 +123,25 @@ function showQuestion(question) {
 
         inputAnswer.forEach(answer => {
 
-            answerInputs.innerHTML += ` <div>
-                    <input type="radio" name="choice" id="${answer.text}">
-                    <label for="${answer.text}">
+            answerInputs.innerHTML += `
+                    <div>
+                        <input type="radio" name="choice" id="${answer.text}">
+                        <label for="${answer.text}">
                         <i class="fas ${answer.icon}"></i>
                         <span>${answer.text}</span> </label>
                     </div>`
         })
+
+
 
     } else {
 
         answerInputs.innerHTML += `<input type="number"  id="${input.name}" min="${input.min}" max="${input.max}" placeholder="${input.min} - ${input.max}">
                                     <span class="input-span">${input.name}</span>`
     }
-}
 
+
+}
 
 
 
@@ -79,6 +152,14 @@ function folowProgress(number) {
     questionNumber.innerText = currentNmber
     progressBar.style.width = `calc(${currentNmber} * calc(100% / 22))`
 
+}
+
+function transition(frame) {
+
+    animateBox.style.animation = ` ${frame} .5s ease`
+    animateBox.addEventListener('animationend', () => {
+        animateBox.style.animation = ``
+    })
 }
 
 
