@@ -1012,7 +1012,7 @@ button:hover {
       position: absolute;
       top: -25px;
       z-index: -1;
-      transition: all .3s ease; }
+      transition: all 0.3s ease; }
   .stepper .select::before {
     content: '';
     height: 22px;
@@ -1036,7 +1036,7 @@ button:hover {
   width: 64%;
   text-align: center;
   background-color: #e9ecef;
-  margin: 0px auto 20px;
+  margin: 0 auto 20px;
   padding: 20px 40px;
   border-radius: 8px; }
   .Préambule--para1 {
@@ -1056,7 +1056,7 @@ button:hover {
     color: #1078AD; }
   .Préambule hr {
     width: 55%;
-    margin: 0px auto;
+    margin: 0 auto;
     border: 2px solid #F4CF1B; }
 
 .start-btn {
@@ -1066,7 +1066,7 @@ button:hover {
   background-color: #1078AD;
   padding: 10px 20px;
   cursor: pointer;
-  transition: all .3s ease; }
+  transition: all 0.3s ease; }
   .start-btn:hover {
     color: #1078AD;
     background-color: transparent; }
@@ -1108,11 +1108,11 @@ button:hover {
         background-color: #1078AD;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
-        transition: all .4s ease; }
+        transition: all 0.4s ease; }
 
 .answer-inputs {
   width: 30%;
-  margin: 0px auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1137,7 +1137,7 @@ button:hover {
     background-color: #1078AD;
     color: #F4CF1B; }
   .answer-inputs label {
-    margin: 0px 10px;
+    margin: 0 10px;
     height: 72px;
     width: 88px;
     color: #1078AD;
@@ -1148,8 +1148,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 0px;
-    transition: .5s ease; }
+    padding: 10px 0;
+    transition: 0.5s ease; }
     .answer-inputs label span {
       font-size: 16px;
       font-weight: 900; }
@@ -1169,7 +1169,41 @@ button:hover {
     color: #2B2B2C;
     border: 1px solid #1078AD;
     border-radius: 4px;
-    transition: .3s ease; }
+    transition: 0.3s ease; }
     .btn-container button:hover {
       background-color: #1078AD;
       color: white; }
+
+@media only screen and (max-width: 575px) {
+  .wrapper {
+    width: 90%; }
+  .stepper h1 {
+    font-size: 16px; }
+    .stepper h1::before {
+      height: 12px;
+      width: 12px;
+      top: -20px; }
+    .stepper h1::after {
+      height: 12px;
+      width: 12px;
+      top: -20px; }
+  .stepper .select::before {
+    height: 16px;
+    width: 16px;
+    top: -25px; }
+  .stepper .select::after {
+    height: 32px;
+    width: 32px;
+    top: -33px; }
+  .Préambule {
+    width: 80%;
+    text-align: center;
+    padding: 20px; }
+    .Préambule--para1, .Préambule--para2 {
+      text-align: justify;
+      text-align-last: center; }
+    .Préambule hr {
+      width: 80%;
+      margin: 10px auto; }
+  .start-btn {
+    width: 40%; } }

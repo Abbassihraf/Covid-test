@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     width: 70%;
     margin: 80px auto 20px;
 }
@@ -31,7 +31,7 @@
             position: absolute;
             top: -25px;
             z-index: -1;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
         }
     }
 
@@ -64,16 +64,16 @@
     width: 64%;
     text-align: center;
     background-color: $colorQ;
-    margin: 0px auto 20px;
+    margin: 0 auto 20px;
     padding: 20px 40px;
     border-radius: 8px;
-    &--para1{
+    &--para1 {
         font-size: 18px;
         font-weight: 600;
         line-height: 1.6em;
         padding-bottom: 10px;
     }
-    &--para2{
+    &--para2 {
         font-size: 18px;
         font-weight: 600;
         line-height: 1.6em;
@@ -89,7 +89,7 @@
 
     hr {
         width: 55%;
-        margin: 0px auto;
+        margin: 0 auto;
         border: 2px solid $colorS;
     }
 
@@ -100,9 +100,9 @@
     font-weight: bolder;
     color: $colorW;
     background-color: $colorP;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
         color: $colorP;
@@ -117,16 +117,15 @@
     border-radius: 8px;
     display: none;
 
-
     h1 {
         text-align: center;
         font-size: 24px;
         line-height: 1.8rem;
-        color:$colorG;
+        color: $colorG;
         font-weight: 600;
         width: 80%;
         margin: 20px auto;
-        }
+    }
 
     .progress {
         display: flex;
@@ -149,24 +148,22 @@
             border-radius: 20px;
             background-color: $colorA;
 
-
             .bar {
                 height: 100%;
                 width: calc(1* calc(100% / 22));
                 background-color: $colorP;
                 border-bottom-left-radius: 20px;
                 border-top-left-radius: 20px;
-                transition: all .4s ease;
+                transition: all 0.4s ease;
             }
         }
     }
-
 
 }
 
 .answer-inputs {
     width: 30%;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,7 +198,7 @@
     }
 
     label {
-        margin: 0px 10px;
+        margin: 0 10px;
         height: 72px;
         width: 88px;
         color: $colorP;
@@ -212,8 +209,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10px 0px;
-        transition: .5s ease;
+        padding: 10px 0;
+        transition: 0.5s ease;
 
         span {
             font-size: 16px;
@@ -227,7 +224,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    .next{
+    .next {
         grid-area: 1/3;
     }
     button {
@@ -238,11 +235,63 @@
         color: $colorD;
         border: 1px solid $colorP;
         border-radius: 4px;
-        transition: .3s ease;
+        transition: 0.3s ease;
 
         &:hover {
             background-color: $colorP;
             color: white;
         }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .wrapper {
+        width: 90%;
+    }
+    .stepper {
+        h1 {
+            font-size: 16px;
+            &::before {
+                height: 12px;
+                width: 12px;
+                top: -20px;
+            }
+            &::after {
+                height: 12px;
+                width: 12px;
+                top: -20px;
+            }
+        }
+        .select {
+            &::before {
+                height: 16px;
+                width: 16px;
+                top: -25px;
+            }
+            &::after {
+                height: 32px;
+                width: 32px;
+                top: -33px;
+
+            }
+        }
+    }
+    .Préambule {
+        width: 80%;
+        text-align: center;
+        padding: 20px;
+        &--para1,
+        &--para2 {
+            text-align: justify;
+            text-align-last: center;
+        }
+        hr {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+    }
+    .start-btn{
+        width: 40%;
     }
 }
