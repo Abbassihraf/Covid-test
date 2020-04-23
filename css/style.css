@@ -1060,6 +1060,7 @@ button:hover {
     border: 2px solid #F4CF1B; }
 
 .start-btn {
+  margin-bottom: 40px;
   width: 20%;
   font-weight: bolder;
   color: #FFFFFF;
@@ -1206,7 +1207,7 @@ button:hover {
       width: 80%;
       margin: 10px auto; }
   .start-btn {
-    width: 40%; } }
+    width: 50%; } }
 
 @media (min-width: 575px) and (max-width: 1024px) {
   .wrapper {
