@@ -1099,7 +1099,7 @@ button:hover {
     border-top-right-radius: 4px; }
     .questionnaire .progress h3 {
       font-weight: bolder;
-      margin-right: 15px; }
+      margin-right: 10px; }
     .questionnaire .progress__bar {
       width: 90%;
       height: 10px;
@@ -1158,7 +1158,7 @@ button:hover {
       font-weight: 900; }
 
 .btn-container {
-  margin: 40px auto;
+  margin: 40px auto 20px;
   width: 100%;
   display: grid;
   grid-template-columns: 33% 33% 33%; }
@@ -1178,7 +1178,7 @@ button:hover {
       color: #FFFFFF; }
     .btn-container button:disabled {
       cursor: not-allowed;
-      opacity: .65; }
+      opacity: 0.65; }
       .btn-container button:disabled:hover {
         background-color: #96C5DC !important;
         color: #1078AD !important; }
@@ -1203,89 +1203,94 @@ button:hover {
     opacity: 1; }
   100% {
     transform: translateX(0); } }
-  @media only screen and (max-width: 575px) {
-    .btn-container .wrapper {
-      width: 90%; }
-    .btn-container .stepper h1 {
-      font-size: 16px; }
-      .btn-container .stepper h1::before {
-        height: 12px;
-        width: 12px;
-        top: -20px; }
-      .btn-container .stepper h1::after {
-        height: 12px;
-        width: 12px;
-        top: -20px; }
-    .btn-container .stepper .select::before {
-      height: 16px;
-      width: 16px;
-      top: -25px; }
-    .btn-container .stepper .select::after {
-      height: 32px;
-      width: 32px;
-      top: -33px; }
-    .btn-container .Préambule {
+
+@media only screen and (max-width: 575px) {
+  .wrapper {
+    width: 90%; }
+  .stepper h1 {
+    font-size: 16px; }
+    .stepper h1::before {
+      height: 12px;
+      width: 12px;
+      top: -20px; }
+    .stepper h1::after {
+      height: 12px;
+      width: 12px;
+      top: -20px; }
+  .stepper .select::before {
+    height: 16px;
+    width: 16px;
+    top: -25px; }
+  .stepper .select::after {
+    height: 32px;
+    width: 32px;
+    top: -33px; }
+  .Préambule {
+    width: 80%;
+    text-align: center;
+    padding: 20px; }
+    .Préambule--para1, .Préambule--para2 {
+      text-align: justify;
+      text-align-last: center; }
+    .Préambule hr {
       width: 80%;
-      text-align: center;
-      padding: 20px; }
-      .btn-container .Préambule--para1, .btn-container .Préambule--para2 {
-        text-align: justify;
-        text-align-last: center; }
-      .btn-container .Préambule hr {
-        width: 80%;
-        margin: 10px auto; }
-    .btn-container .start-btn {
-      width: 50%; }
-    .btn-container .questionnaire {
-      width: 80%; }
-      .btn-container .questionnaire h1 {
-        font-size: 18px;
-        line-height: 1.4rem;
-        margin: 10px auto; }
-    .btn-container .progress {
-      margin: auto;
-      width: 90%; }
-    .btn-container .btn-container {
-      display: grid;
-      grid-template-columns: 50% 50%; }
-      .btn-container .btn-container .next {
-        grid-area: 1/2; }
-      .btn-container .btn-container button {
-        width: 70%; }
-    .btn-container .answer-inputs {
-      width: 80%; } }
-  @media (min-width: 575px) and (max-width: 1024px) {
-    .btn-container .wrapper {
-      width: 90%; }
-    .btn-container .stepper h1 {
-      font-size: 16px; }
-      .btn-container .stepper h1::before {
-        height: 12px;
-        width: 12px;
-        top: -20px; }
-      .btn-container .stepper h1::after {
-        height: 12px;
-        width: 12px;
-        top: -20px; }
-    .btn-container .stepper .select::before {
-      height: 16px;
-      width: 16px;
-      top: -25px; }
-    .btn-container .stepper .select::after {
-      height: 32px;
-      width: 32px;
-      top: -33px; }
-    .btn-container .Préambule {
-      width: 80%;
-      text-align: center;
-      padding: 20px; }
-      .btn-container .Préambule--para1, .btn-container .Préambule--para2 {
-        text-align: justify;
-        text-align-last: center; }
-      .btn-container .Préambule hr {
-        width: 70%;
-        margin: 10px auto; }
-    .btn-container .start-btn {
-      font-size: 24px;
-      width: 40%;
-      margin-bottom: 40px; } }
+      margin: 10px auto; }
+  .start-btn {
+    width: 50%; }
+  .questionnaire {
+    width: 88%; }
+    .questionnaire h1 {
+      font-size: 18px;
+      line-height: 1.4rem;
+      margin: 10px auto; }
+  .progress {
+    margin: auto;
+    width: 100%; }
+    .progress h3 {
+      display: inherit; }
+  .btn-container {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .btn-container .next {
+      grid-area: 1/2; }
+    .btn-container button {
+      width: 90%;
+      padding: 10px 14px; }
+  .answer-inputs {
+    width: 80%; } }
+
+@media (min-width: 575px) and (max-width: 1024px) {
+  .wrapper {
+    width: 90%; }
+  .stepper h1 {
+    font-size: 16px; }
+    .stepper h1::before {
+      height: 12px;
+      width: 12px;
+      top: -20px; }
+    .stepper h1::after {
+      height: 12px;
+      width: 12px;
+      top: -20px; }
+  .stepper .select::before {
+    height: 16px;
+    width: 16px;
+    top: -25px; }
+  .stepper .select::after {
+    height: 32px;
+    width: 32px;
+    top: -33px; }
+  .Préambule {
+    width: 80%;
+    text-align: center;
+    padding: 20px; }
+    .Préambule--para1, .Préambule--para2 {
+      text-align: justify;
+      text-align-last: center; }
+    .Préambule hr {
+      width: 70%;
+      margin: 10px auto; }
+  .start-btn {
+    font-size: 24px;
+    width: 40%;
+    margin-bottom: 40px; } }

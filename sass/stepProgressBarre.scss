@@ -142,7 +142,7 @@
 
         h3 {
             font-weight: bolder;
-            margin-right: 15px;
+            margin-right: 10px;
         }
 
         &__bar {
@@ -223,7 +223,7 @@
 }
 
 .btn-container {
-    margin: 40px auto;
+    margin: 40px auto 20px;
     width: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -246,45 +246,46 @@
         }
         &:disabled {
             cursor: not-allowed;
-            opacity: .65;
+            opacity: 0.65;
 
             &:hover {
                 background-color: $colorA !important;
                 color: $colorP !important;
             }
+        }
     }
-}
-.hide {
-    opacity: 0;
-    pointer-events: none;
-}
-@keyframes next {
-    0% {
+    .hide {
         opacity: 0;
-        transform: translateX(90%);
+        pointer-events: none;
+    }
+    @keyframes next {
+        0% {
+            opacity: 0;
+            transform: translateX(90%);
+        }
+
+        15% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
 
-    15% {
-        opacity: 1;
-    }
+    @keyframes previous {
+        0% {
+            opacity: 0;
+            transform: translateX(-90%);
+        }
 
-    100% {
-        transform: translateX(0);
-    }
-}
+        15% {
+            opacity: 1;
+        }
 
-@keyframes previous {
-    0% {
-        opacity: 0;
-        transform: translateX(-90%);
-    }
-
-    15% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0);
+        100% {
+            transform: translateX(0);
+        }
     }
 }
 
@@ -339,7 +340,7 @@
         width: 50%;
     }
     .questionnaire {
-        width: 80%;
+        width: 88%;
         h1 {
             font-size: 18px;
             line-height: 1.4rem;
@@ -348,7 +349,10 @@
     }
     .progress {
         margin: auto;
-        width: 90%;
+        width: 100%;
+        h3{
+            display: inherit;
+        }
     }
     .btn-container {
         display: grid;
@@ -357,7 +361,8 @@
             grid-area: 1/2;
         }
         button {
-            width: 70%;
+            width: 90%;
+            padding: 10px 14px;
         }
     }
     .answer-inputs {
@@ -418,5 +423,4 @@
         width: 40%;
         margin-bottom: 40px;
     }
-}
 }
