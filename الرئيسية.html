@@ -11,29 +11,40 @@
         <link
             rel="stylesheet"
             href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
+            <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
 
         <title>مرض الفيروس التاجي - اختبر أعراض الفيروس التاجي 19</title>
     </head>
     <body>
+            <script>
+                    $(function () {
+                        $(".toggle").on("click", function () {
+                            if ($(".item").hasClass("active")) {
+                                $(".item").removeClass("active");
+                            } else {
+                                $(".item").addClass("active");
+                            }
+                        });
+                    });
+                </script>
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label><img class="logo" src="/Design/Assets/png/logo__sante-63.png" alt="logo"></label>
-            <ul>
-                <li>
-                    <a id="Con" class="conseils" href="/نصائح.html">نصائح</a>
+            <ul class="menu">
+                <li class="logo">
+                    <img src="/Design/Assets/png/logo__sante.png" alt="Logo ministre de la santé">
                 </li>
-                <li>
-                    <a class="active" href="/الرئيسية.html">الرئيسية</a>
+                <a href="/Acceuil.html"> <img class="lang" src="/Design/Assets/png/Fr.png" alt="Drapeau Maroc"></a>
+                <li class="item">
+                    <a href="نصائح.html">نصائح</a>
                 </li>
-                <li>
-                    <a href="/Acceuil.html" id="Ar" class="flag-icon-background flag-icon-fr"></a>
+                <li class="item">
+                    <a href="/الرئيسية.html" class="actv">الرئيسية</a>
                 </li>
+                
+                <li class="toggle">
+                    <span class="bars"></span></li>
             </ul>
         </nav>
         <section class="infoMedicale">
