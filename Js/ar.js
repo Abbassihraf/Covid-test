@@ -84,10 +84,10 @@ nextBtn.addEventListener('click', () => {
         transition('next')
         nextBtn.disabled = true
         if (currentQuestionIndex === 21) {
-            nextBtn.innerText = 'Terminer le test'
+            nextBtn.innerText = 'ننهي الإختبار'
 
         } else {
-            nextBtn.innerText = 'Suivant'
+            nextBtn.innerText = 'السؤال التالي'
         }
     }
 
@@ -103,10 +103,10 @@ previousBtn.addEventListener('click', () => {
     transition('previous')
     nextBtn.disabled = true
     if (currentQuestionIndex === 21) {
-        nextBtn.innerText = 'Terminer le test'
+        nextBtn.innerText = 'ننهي الإختبار'
 
     } else {
-        nextBtn.innerText = 'Suivant'
+        nextBtn.innerText = 'السؤال التالي'
     }
 })
 
@@ -237,283 +237,281 @@ function transition(frame) {
 
 
 const questions = [{
-        question: 'واش كانت فيك السخانة في 10 ايام لي فاتت ( التبوريشة ، العرق ) ؟
-        '
-
-        input: {
+        question: 'واش كانت فيك السخانة في 10 أيام لي فاتت (التوريشة,العرق؟',
+            input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Quelle est votre température corporelle ?',
+        question: 'شحال درجة الحرارة ديالك ؟',
 
         input: {
             type: 'number',
-            name: 'degrés',
+            name: 'درجة',
             min: 34,
             max: 42
         }
     }, {
-        question: 'Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?',
+        question: 'في الايام لي فاتو واش كانت فيك الكحبة اولا تزادت الكحبة لي كانت كتجيك عادية؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Avez-vous eu des courbatures inhabituelles au cours des derniers jours ?',
+        question: 'واش كتعاني من آلام عضلية غير معتادة في الأيام القليلة لي فاتت؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Ces derniers jours, avez-vous un mal de gorge ?',
+        question: 'واش كتحس بآلام فحلقك هاد الايام ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Ces dernières 24 heures, avez-vous de la diarrhée ? Avec au moins 3 selles molles.',
+        question: 'فهاد 24 ساعة لي فاتو واش كان فيك الإسهال ؟ على الاقل 3 مرات',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Ces derniers jours, avez-vous une fatigue inhabituelle qui vous a obligé à vous reposer plus de la moitié de la journée ?',
+        question: 'فهاد الايام لي فاتو، واش عيتي بطريقة ماشي عادية لدرجة بقيتي مريح اكثر من نص يوم ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ?',
+        question: 'واش لقيتي صعوبة كبيرة فالماكلة و الشراب لاكثر من 24 ساعة ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Dans les dernières 24 heures, avez-vous noté un manque de souffle inhabituel lorsque vous parlez ou faites un petit effort ?',
+        question: 'واش كتحس بضيق فالتنفس ملي كتكلم ولا كدير جهد كثر من العادة ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Actuellement, comment vous vous sentez ?',
+        question: 'فهاد الوقت كيف كتحس بالجسم ديالك ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Bien',
+                text: 'مزيان',
                 icon: ' far fa-laugh'
             }, {
-                text: 'Assez bien',
+                text: 'شويا',
                 icon: ' far fa-smile'
             }, {
-                text: 'Fatigué(e)',
+                text: 'عيان',
                 icon: ' far fa-frown'
             }, {
-                text: 'Très fatigué',
+                text: 'مهلوك',
                 icon: 'far fa-dizzy'
             }]
         }
     }, {
-        question: 'Quel est votre âge ? Ceci, afin de calculer un facteur de risque spécifique.',
+        question: 'شحال عندك فعمرك ؟ هادشي باش نقدو نعرفو الخطورة ديال المرض إلا كان.',
 
         input: {
             type: 'number',
-            name: 'ans',
+            name: 'سنة',
             min: 15,
             max: 110
         }
     }, {
-        question: 'Quel est votre poids ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.',
+        question: 'شحال عندك فالوزن ؟ باش نعرفو مؤشر الوزن ديال الجسم ديالك حيث يقدر يتزاد عليك الحال فحالة كان فيك الڤيروس',
 
         input: {
             type: 'number',
-            name: 'kg',
+            name: 'كلغ',
             min: 20,
             max: 250
         }
     }, {
-        question: 'Quelle est votre taille ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.',
+        question: 'شحال فيك فالطول ؟ باش نعرفو مؤشر الوزن ديال الجسم ديالك حيث يقدر يتزاد عليك الحال فحالة كان فيك الڤيروس',
 
         input: {
             type: 'number',
-            name: 'cm',
+            name: 'سنتيمتر',
             min: 80,
             max: 250
         }
     }, {
-        question: 'Avez-vous de l’hypertension artérielle mal équilibrée ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?',
+        question: 'واش عندك ارتفاع ضغط الدم ؟ ولا فيك مرض القلب او الأوعية الدموية ؟ او كتاخد دوا ديال القلب ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Êtes-vous diabétique ?',
+        question: 'فيك مرض السكر ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Avez-vous ou avez-vous eu un cancer ?',
+        question: 'واش فيك السرطان ولا كان فيك السرطان؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?',
+        question: 'واش عندك الضيقة ؟ او متبع مع شي طبيب ديال الرية',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Avez-vous une insuffisance rénale chronique dialysée ?',
+        question: 'واش كدير دياليز؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Avez-vous une maladie chronique du foie ?',
+        question: 'واش عندك إلتهاب فالكبد ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Êtes-vous enceinte ?',
+        question: 'واش حاملة ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }, {
-                text: 'Homme',
+                text: 'راجل',
                 icon: 'fa-male'
 
             }]
         }
     }, {
-        question: 'Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?',
+        question: 'واش عندك شي مرض تينقص لك المناعة ديالك ؟',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
     }, {
-        question: 'Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive).',
+        question: 'واش تتاخد شي دواء تينقص لك المناعة ديالك ؟ بحال: الكورتيكوستيرويدات ، الميثوتريكسات ، السيكلوسبورين ، تاكروليموس ، الآزوثيوبرين ، سيكلوفوسفاميد (كاين ادوية اخرى من غير هادو).',
 
         input: {
             type: 'radio',
             answer: [{
-                text: 'Oui',
+                text: 'نعم',
                 icon: 'fa-check'
             }, {
-                text: 'Non',
+                text: 'لا',
                 icon: 'fa-times'
             }]
         }
