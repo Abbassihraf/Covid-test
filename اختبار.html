@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="Ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="/Design/Assets/png/logo__sante.png">
+        <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+
+        <title>مرض الفيروس التاجي - اختبر أعراض الفيروس التاجي 19</title>
+    </head>
+    <body>
+        <script>
+            $(function () {
+                $(".toggle").on("click", function () {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                });
+            });
+        </script>
+        <nav>
+            <ul class="menu">
+                <li class="logo">
+                    <img src="/Design/Assets/png/logo__sante.png" alt="Logo ministre de la santé">
+                </li>
+                <a href="/Acceuil.html">
+                    <img class="lang" src="/Design/Assets/png/Fr.png" alt="Drapeau Maroc"></a>
+                <li class="item">
+                    <a href="نصائح.html">نصائح</a>
+                </li>
+                <li class="item">
+                    <a href="/الرئيسية.html" class="actv">الرئيسية</a>
+                </li>
+
+                <li class="toggle">
+                    <span class="bars"></span></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <section class="stepper">
+                <h1 class="select">معلومات</h1>
+                <h1>الإختبار</h1>
+                <h1>النتائج</h1>
+            </section>
+        </div>
+        <section class="Préambule">
+            <h1>تمهيد</h1>
+            <p class="Préambule--para1">هاد التطبيق مجاني، درناه باش نسهلو على الناس لي
+                عندها إصابة بڤيروس كورونا المستجد يعرفو الحالة ديالهم و آش خصهم يديرو. منقدوش
+                نضمنو بنسبة 100% دقة المعلومات لي تيعطيها هاد التطبيق. يقر المستخدم بأن التطبيق
+                ، بما في ذلك الاختبار و المعلومات الأخرى لي فيه، لا تشكل توصية او فحص او وصفة
+                طبية او اي حاجة عندها طبيعة طبية.</p>
+            <hr>
+            <p class="Préambule--para2">
+                    هاد التطبيق متيعوضش الطبيب ديالك لي يقدر يعطيك نصيحة أفضل.
+                    المعلومات ديال هاد التطبيق هي المستوى الاول باش نقدو نحددو الحالات الممكنة.
+            </p>
+
+        </section>
+
+        <button class="start-btn">نبداو الإختبار</button>
+        <section class="questionnaire">
+            <div class="progress">
+                <h3>
+                    <span class="question-number">1</span>
+                    /22</h3>
+                <div class="progress__bar">
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div class="animation">
+                <h1 class="question">Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers
+                    jours (frissons, sueurs) ?
+                </h1>
+                <div class="answer-inputs">
+                    <!-- <input type="number" id="degrés" min="34" max="42" placeholder="34 - 42">
+                    <span class="input-span">degrés</span> -->
+
+                    <div>
+                        <input type="radio" name="choice" id="oui">
+                        <label for="oui">
+                            <i class="fas fa-check"></i>
+                            <span>Oui</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="choice" id="non">
+                        <label for="non">
+                            <i class="fas fa-times"></i>
+                            <span>Non</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="btn-container">
+                    <button class="previous">Précédent</button>
+                    <button class="next ">Suivant</button>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="recommandations">
+            <h3 class="recommandations__title">التوصيات الرسمية
+            </h3>
+            <p class="recommandations__para">
+                إذا كنت كتظن انك مريض، فمن الاحسن :</p>
+            <h5 class="recommandations__appelez">اتصل على
+            </h5>
+            <div class="recommandations__wrapper">
+                <p class="recommandations__wrapper--rec1">
+                    <span class="war">⚠</span>
+                    تبعد من البلايص العمومية.</p>
+                <p class="recommandations__wrapper--rec2">
+                    <span class="war">⚠</span>
+                    ماتزورش الناس الضعفاء ( الناس الكبار أو المرضى ).</p>
+                <p class="recommandations__wrapper--rec3">
+                    <span class="war">⚠</span>
+                    بقى فدارك</p>
+                <p class="recommandations__wrapper--rec4">
+                    <span class="war">⚠</span>
+                    التزم التعليمات المفروضة ( غسل يديك، ارتدي الماسك فحالة حسيتي بالأعراض ).</p>
+                <p class="recommandations__wrapper--rec5">
+                    <span class="war">⚠</span>
+                    راقب الأعراض ديالك و التغيرات فدرجة حرارة الجسم ديالك.</p>
+                <span class="recommandations__wrapper--num1">
+                    <h6 class="recommandations__wrapper--pr1">141</h6>
+                </span>
+                <span class="recommandations__wrapper--num2">
+                    <h6 class="recommandations__wrapper--pr2">080 100 47 47
+                    </h6>
+                </span>
+                <span class="recommandations__wrapper--num3">
+                    <h6 class="recommandations__wrapper--pr3">300</h6>
+                </span>
+                <span class="recommandations__wrapper--num4">
+                    <a
+                        class="recommandations__wrapper--link"
+                        href="https://www.sante.gov.ma/"
+                        target="_blank">www.sante.gov.ma</a>
+                </span>
+            </div>
+        </section>
+        <footer class="footer">
+            <span >
+                <img
+                    class="footer__logo"
+                    src="/Design/Assets/png/logo__sante-63.png"
+                    alt="logo">
+            </span>
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <h5 class="footer__left--title">اتصالات مفيدة</h5>
+                    <p class="footer__left--para">الرقم الاقتصادي - ألو اليقضة الوبائية
+                    </p>
+                    <p class="footer__left--num">080 100 47 47
+                    </p>
+                    <p class="footer__left--para">رقم خاص للمساعدة الطبية الاستعجالية
+                    </p>
+                    <p class="footer__left--num">141
+                    </p>
+                    <p class="footer__left--para">المنصة الهاتفية - ألو 300
+                    </p>
+                    <p class="footer__left--num">300
+                    </p>
+                </div>
+                <div class="footer__right">
+                    <ul class="footer__right--list">
+                        <li class="footer__right--acceuil">
+                            <a class="acc" href="/الرئيسية.html">الرئيسية</a>
+                        </li>
+                        <li class="footer__right--conseils">
+                            <a href="نصائح.html">نصائح</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="bottom-footer"></div>
+
+        <script src="/Js/questionnaire.js"></script>
+    </body>
+</html>
