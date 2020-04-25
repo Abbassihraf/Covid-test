@@ -240,6 +240,7 @@ const questions = [{
         question: 'واش كانت فيك السخانة في 10 أيام لي فاتت (التوريشة,العرق؟',
             input: {
             type: 'radio',
+            qNumber: 'Q1',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -253,6 +254,7 @@ const questions = [{
 
         input: {
             type: 'number',
+            qNumber: 'Q2',
             name: 'درجة',
             min: 34,
             max: 42
@@ -262,6 +264,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q3',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -275,6 +278,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q4',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -288,6 +292,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q5',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -301,6 +306,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q6',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -314,6 +320,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q7',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -327,6 +334,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q8',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -340,6 +348,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q9',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -353,6 +362,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q10',
             answer: [{
                 text: 'مزيان',
                 icon: ' far fa-laugh'
@@ -372,6 +382,7 @@ const questions = [{
 
         input: {
             type: 'number',
+            qNumber: 'Q11',
             name: 'سنة',
             min: 15,
             max: 110
@@ -381,6 +392,7 @@ const questions = [{
 
         input: {
             type: 'number',
+            qNumber: 'Q12',
             name: 'كلغ',
             min: 20,
             max: 250
@@ -390,6 +402,7 @@ const questions = [{
 
         input: {
             type: 'number',
+            qNumber: 'Q13',
             name: 'سنتيمتر',
             min: 80,
             max: 250
@@ -399,6 +412,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q14',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -412,6 +426,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q15',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -425,6 +440,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q16',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -438,6 +454,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q17',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -451,6 +468,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q18',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -464,6 +482,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q19',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -477,6 +496,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q20',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -494,6 +514,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q21',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
@@ -507,6 +528,7 @@ const questions = [{
 
         input: {
             type: 'radio',
+            qNumber: 'Q22',
             answer: [{
                 text: 'نعم',
                 icon: 'fa-check'
