@@ -411,6 +411,7 @@ button:hover {
 
 .wrapper__left--war1, .wrapper__left--war2, .wrapper__left--war3, .wrapper__left--war4, .wrapper__left--war5 {
   color: #F4CF1B;
+  font-weight: 900;
   margin-left: auto;
   margin-right: auto; }
 
@@ -459,6 +460,14 @@ button:hover {
       font-size: 22px; }
     .wrapper__right--link {
       font-size: 22px; } }
+
+@media (min-width: 575px) and (max-width: 1024px) {
+  .recommandations__title {
+    font-size: 24px; }
+  .recommandations__para {
+    margin: 20px 100px 20px 0px; }
+  .recommandations__wrapper {
+    width: 90%; } }
 
 .heroFooter {
   background-color: #96C5DC;

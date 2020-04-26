@@ -28,6 +28,7 @@
     }
     &__left--war1,&__left--war2,&__left--war3,&__left--war4,&__left--war5{
         color: $colorS;
+        font-weight: 900;
         margin-left: auto;
         margin-right: auto;
     }
@@ -92,6 +93,21 @@
             &--link{
                 font-size: 22px;
             }
+        }
+    }
+}
+
+
+@media (min-width: 575px)and(max-width: 1024px){
+    .recommandations{
+        &__title{
+            font-size: 24px;
+        }
+        &__para{
+            margin: 20px 100px 20px 0px;
+        }
+        &__wrapper{
+            width: 90%;
         }
     }
 }
