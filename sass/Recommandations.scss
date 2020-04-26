@@ -58,3 +58,40 @@
         }
     }
 }
+
+@media only screen and (max-width: 575px){
+    .recommandations{
+        &__title{
+            font-weight: bold;
+            font-size: 22px;
+        }
+        &__para{
+            margin: 20px 10px 30px 10px;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+        }
+    }
+    .wrapper{
+        &__left{
+            grid-area: 1/1;
+            margin-bottom: 60px;
+        }
+        &__right{
+            grid-area: 2/1;
+            &--appelez{
+                font-size: 22px;
+            }
+            &--pr1,&--pr2,&--pr3{
+                padding-left: 32px;
+                padding-right: 32px;
+                font-size: 22px;
+            }
+            &--link{
+                font-size: 22px;
+            }
+        }
+    }
+}

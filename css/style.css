@@ -436,6 +436,30 @@ button:hover {
   .wrapper__right--link:hover {
     color: #F4CF1B; }
 
+@media only screen and (max-width: 575px) {
+  .recommandations__title {
+    font-weight: bold;
+    font-size: 22px; }
+  .recommandations__para {
+    margin: 20px 10px 30px 10px; }
+  .recommandations__wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%; }
+  .wrapper__left {
+    grid-area: 1/1;
+    margin-bottom: 60px; }
+  .wrapper__right {
+    grid-area: 2/1; }
+    .wrapper__right--appelez {
+      font-size: 22px; }
+    .wrapper__right--pr1, .wrapper__right--pr2, .wrapper__right--pr3 {
+      padding-left: 32px;
+      padding-right: 32px;
+      font-size: 22px; }
+    .wrapper__right--link {
+      font-size: 22px; } }
+
 .heroFooter {
   background-color: #96C5DC;
   margin-top: -10px;
