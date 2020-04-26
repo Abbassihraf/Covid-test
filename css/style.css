@@ -539,6 +539,30 @@ button:hover {
   .wrapperAr__right--link:hover {
     color: #F4CF1B; }
 
+@media only screen and (max-width: 575px) {
+  .recommandationsAr__title {
+    font-weight: bold;
+    font-size: 22px; }
+  .recommandationsAr__para {
+    margin: 20px 56px 30px 10px; }
+  .recommandationsAr__wrapperAr {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%; }
+  .wrapperAr__left {
+    grid-area: 1/1;
+    margin-bottom: 60px; }
+  .wrapperAr__right {
+    grid-area: 2/1; }
+    .wrapperAr__right--appelez {
+      font-size: 22px; }
+    .wrapperAr__right--pr1, .wrapperAr__right--pr2, .wrapperAr__right--pr3 {
+      padding-left: 32px;
+      padding-right: 32px;
+      font-size: 22px; }
+    .wrapperAr__right--link {
+      font-size: 22px; } }
+
 .heroFooter {
   background-color: #96C5DC;
   margin-top: -10px;
