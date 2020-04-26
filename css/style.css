@@ -563,6 +563,14 @@ button:hover {
     .wrapperAr__right--link {
       font-size: 22px; } }
 
+@media (min-width: 575px) and (max-width: 1024px) {
+  .recommandationsAr__title {
+    font-size: 24px; }
+  .recommandationsAr__para {
+    margin: 20px 100px 20px 0px; }
+  .recommandationsAr__wrapperAr {
+    width: 90%; } }
+
 .heroFooter {
   background-color: #96C5DC;
   margin-top: -10px;

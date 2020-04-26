@@ -229,3 +229,17 @@
         }
     }
 }
+
+@media (min-width: 575px)and(max-width: 1024px){
+    .recommandationsAr{
+        &__title{
+            font-size: 24px;
+        }
+        &__para{
+            margin: 20px 100px 20px 0px;
+        }
+        &__wrapperAr{
+            width: 90%;
+        }
+    }
+}
