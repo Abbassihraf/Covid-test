@@ -30,7 +30,7 @@ a:hover{
   margin-top: 12px;
 }
 .logo img{
-  width: 72px;
+  width: 2px;
   height: auto;
 }
 
@@ -70,7 +70,7 @@ a:hover{
   margin-right: 0px;
 }
 .logo img{
-  width: 72px;
+  width: 64px;
   height: auto;
   margin-top: 12px;
 }
@@ -132,7 +132,7 @@ a:hover{
     margin-top: 12px;
   }
   .logo img{
-    width: 16%;
+    width: 6%;
     height: auto;
   }
   .item {
@@ -153,5 +153,12 @@ a:hover{
   }
   .menu li.button {
       padding-right: 0;
+  }
+}
+
+@media (min-width: 575px)and(max-width: 1024px){
+  .logo img{
+    width: 20%;
+    height: auto;
   }
 }
