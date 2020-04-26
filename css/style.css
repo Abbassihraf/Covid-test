@@ -8,7 +8,7 @@
 
 nav {
   background-image: url(/Design/Assets/png/bar.png);
-  padding: 0px 5vw;
+  padding: 0px 3vw;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -31,8 +31,8 @@ a:hover {
   margin-top: 8px; }
 
 .logo img {
-  width: 60px;
-  height: 60px; }
+  width: 15%;
+  height: auto; }
 
 .menu li {
   font-size: 16px;
@@ -95,7 +95,7 @@ a:hover {
   top: -5px; }
 
 /* Tablet menu */
-@media all and (min-width: 468px) {
+@media all and (min-width: 575px) {
   .menu {
     justify-content: center; }
   .logo {
@@ -566,7 +566,9 @@ button:hover {
 
 .footer__logo {
   display: block;
-  margin: 20px auto; }
+  margin: 20px auto;
+  width: 15%;
+  height: auto; }
 
 .footer__left--title {
   color: #1078AD;

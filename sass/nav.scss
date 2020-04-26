@@ -8,7 +8,7 @@
 
 nav {
   background-image: url(/Design/Assets/png/bar.png);
-  padding: 0px 5vw;
+  padding: 0px 3vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,8 +32,8 @@ a:hover{
 
 }
 .logo img{
-  width: 60px;
-  height: 60px;
+  width: 15%;
+  height: auto;
 }
 
 .menu li {
@@ -101,7 +101,7 @@ a:hover{
 }
 
 /* Tablet menu */
-@media all and (min-width: 468px) {
+@media all and (min-width: 575px) {
   .menu {
       justify-content: center;
   }
