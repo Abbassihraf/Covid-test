@@ -27,11 +27,10 @@ a:hover {
 .lang {
   width: 32px;
   height: 32px;
-  margin-right: 20px;
-  margin-top: 8px; }
+  margin-top: 12px; }
 
 .logo img {
-  width: 15%;
+  width: 72px;
   height: auto; }
 
 .menu li {
@@ -63,8 +62,14 @@ a:hover {
   display: block; }
 
 .lang {
-  margin-left: 180px;
-  margin-top: 16px; }
+  margin-left: 210px;
+  margin-top: 18px;
+  margin-right: 0px; }
+
+.logo img {
+  width: 72px;
+  height: auto;
+  margin-top: 12px; }
 
 /* Navbar Toggle */
 .toggle {
@@ -95,7 +100,10 @@ a:hover {
   top: -5px; }
 
 /* Tablet menu */
-@media all and (min-width: 575px) {
+@media (min-width: 768px) {
+  .logo img {
+    width: 240px;
+    height: auto; }
   .menu {
     justify-content: center; }
   .logo {
@@ -105,6 +113,12 @@ a:hover {
 
 /* Desktop menu */
 @media all and (min-width: 768px) {
+  .lang {
+    margin-right: 30px;
+    margin-top: 12px; }
+  .logo img {
+    width: 16%;
+    height: auto; }
   .item {
     display: block;
     width: auto; }
