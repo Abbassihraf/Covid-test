@@ -9,12 +9,9 @@ const answerInputs = document.querySelector('.answer-inputs')
 const progressBar = document.querySelector('.bar')
 const questionNumber = document.querySelector('.question-number')
 const animateBox = document.querySelector('.animation')
-const result = document.querySelector('.Préambule h1')
-const resultMessage = document.querySelectorAll('.Préambule p')
 
-console.log(resultMessage[0]);
 
-// ::::::: Event Listener
+
 
 testBtn.addEventListener('click', startTest)
 
@@ -28,60 +25,55 @@ animateBox.addEventListener('change', (e) => {
 
         if (number >= input.min && number <= input.max) {
 
-            answers[input.name] = input
-                .value
-                console
-                .log(answers);
-
             nextBtn.disabled = false
+
+
+
         } else {
+
             nextBtn.disabled = true
 
         }
 
-    } else {
 
-        answers[input.name] = input
-            .id
-            console
-            .log(answers);
+    } else {
         nextBtn.disabled = false
     }
 
+
+
+
+
 })
 
-// ! ::::  fuction
+
 
 let currentQuestionIndex = 0
 
-function hideprevious() {
 
+function hideprevious() {
     if (currentQuestionIndex === 0) {
-        previousBtn
-            .classList
-            .add('hide')
+        previousBtn.classList.add('hide')
     } else {
-        previousBtn
-            .classList
-            .remove('hide')
+        previousBtn.classList.remove('hide')
     }
 }
 
+
+
+
 function startTest() {
-    stepper[0]
-        .classList
-        .remove('select')
-    stepper[1]
-        .classList
-        .add('select')
+    stepper[0].classList.remove('select')
+    stepper[1].classList.add('select')
     testBtn.style.display = 'none'
     Préambule.style.display = 'none'
     questionnaire.style.display = 'block'
     hideprevious()
     nextBtn.disabled = true
-    showQuestion(questions[currentQuestionIndex])
+
 
 }
+
 
 nextBtn.addEventListener('click', () => {
     if (currentQuestionIndex < 21) {
@@ -92,17 +84,15 @@ nextBtn.addEventListener('click', () => {
         transition('next')
         nextBtn.disabled = true
         if (currentQuestionIndex === 21) {
-            nextBtn.innerText = 'إنهاء الإختبار'
-            nextBtn
-                .classList
-                .add('result')
-            const resultBtn = document.querySelector('.result')
-            resultBtn.addEventListener('click', Results)
+            nextBtn.innerText = 'ننهي الإختبار'
 
         } else {
             nextBtn.innerText = 'السؤال التالي'
         }
     }
+
+
+
 })
 
 previousBtn.addEventListener('click', () => {
@@ -113,15 +103,13 @@ previousBtn.addEventListener('click', () => {
     transition('previous')
     nextBtn.disabled = true
     if (currentQuestionIndex === 21) {
-        nextBtn.innerText = 'إنهاء الإختبار'
+        nextBtn.innerText = 'ننهي الإختبار'
 
     } else {
         nextBtn.innerText = 'السؤال التالي'
-        nextBtn
-            .classList
-            .remove('result')
     }
 })
+
 
 function showQuestion(question) {
 
@@ -130,26 +118,32 @@ function showQuestion(question) {
     const inputAnswer = question.input.answer
     const input = question.input
 
+
     if (question.input.type === 'radio') {
 
         inputAnswer.forEach(answer => {
 
             answerInputs.innerHTML += `
                     <div>
-                        <input type="radio" name="${input.qNumber}" id="${answer.text}">
+                        <input type="radio" name="choice" id="${answer.text}">
                         <label for="${answer.text}">
                         <i class="fas ${answer.icon}"></i>
                         <span>${answer.text}</span> </label>
                     </div>`
         })
 
+
+
     } else {
 
-        answerInputs.innerHTML += `<input type="number" name="${input.qNumber}" id="${input.name}" min="${input.min}" max="${input.max}" placeholder="${input.min} - ${input.max}">
+        answerInputs.innerHTML += `<input type="number"  id="${input.name}" min="${input.min}" max="${input.max}" placeholder="${input.min} - ${input.max}">
                                     <span class="input-span">${input.name}</span>`
     }
 
+
 }
+
+
 
 function folowProgress(number) {
 
@@ -166,89 +160,6 @@ function transition(frame) {
     animateBox.addEventListener('animationend', () => {
         animateBox.style.animation = ``
     })
-}
-
-let answers = {}
-
-let severity = 0
-
-function Results() {
-
-    if (answers['Q1'] === 'Oui') {
-
-        severity++
-    }
-
-    if (answers['Q8'] === 'Oui' || answers['Q9'] === 'Oui') {
-
-        severity++
-    }
-
-    if (answers['Q10'] === 'Fatigué(e)' || answers['Q10'] === 'Très fatigué') {
-        severity++
-    }
-
-    if (answers['Q14'] === 'Oui' || answers['Q15'] === 'Oui') {
-
-        severity++
-    }
-
-    showResult(severity)
-
-}
-
-function showResult(severity) {
-
-    stepper[1]
-        .classList
-        .remove('select')
-    stepper[2]
-        .classList
-        .add('select')
-    testBtn.style.display = 'block'
-    Préambule.style.display = 'block'
-    questionnaire.style.display = 'none'
-    testBtn.textContent = ' نعاود الإختبار'
-    testBtn.addEventListener('click', () => {
-
-        window
-            .location
-            .reload()
-    })
-
-    result.innerText = 'النتائج'
-
-    if (severity === 0) {
-
-        resultMessage[0].innerText = 'مافيكش فيروس كورونا على الأرجح، إذا عندك شك اتصل بالطبيب ديالك. تقد تعاود الإختبار لكانوا عندك اعراض اخرى. لبغيتي تعرف اكثر على الڤيروس ممكن تشوف صفحة النصائح'
-        resultMessage[1].innerText = 'خليك فدارك حتى تحيد الاعراض، عبر درجة الحراة 2 مرات فالنهار. ومتنساوش النظافة و غسل إيديك بزاف ديال المرات فالنهار'
-        resultMessage[0].style.fontWeight = 'bold'
-        resultMessage[0].style.color = '#369D53'
-    } else if (severity === 1) {
-
-        resultMessage[0].innerText = 'Nous vous conseillons de rester à votre domicile et de contacter votre médecin' +
-                ' en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouv' +
-                'eau l’application pour réévaluer vos symptômes'
-        resultMessage[1].innerText = 'خليك فدارك حتى تحيد الاعراض، عبر درجة الحراة 2 مرات فالنهار. ومتنساوش النظافة و غسل إيديك بزاف ديال المرات فالنهار'
-        resultMessage[0].style.fontWeight = 'bold'
-        resultMessage[0].style.color = '#369D53'
-
-    } else if (severity === 2) {
-        resultMessage[0].innerText = "تقد تشاور مع طبيب فالتيليفون او يزورك طبيب فالدار" +
-                "إذا كان عندك صعوبة فالتنفس او مقديتيش تاكل مزيان او تشرب لكثر من 24 ساعة ضروري اتصل ب" +
-                "141"
-        resultMessage[1].innerText = 'خليك فدارك حتى تحيد الاعراض، عبر درجة الحراة 2 مرات فالنهار. ومتنساوش النظافة و غسل إيديك بزاف ديال المرات فالنهار'
-        resultMessage[0].style.fontWeight = 'bold'
-        resultMessage[0].style.color = '#369D53'
-    } else {
-        resultMessage[0].innerText = "Appelez le 141"
-        resultMessage[1].innerText = 'خليك فدارك حتى تحيد الاعراض، عبر درجة الحراة 2 مرات فالنهار. ومتنساوش النظافة و غسل إيديك بزاف ديال المرات فالنهار'
-        resultMessage[0].style.color = '#FF0000'
-        resultMessage[0].style.fontSize = '48px'
-        resultMessage[0].style.fontWeight = 'bold'
-
-    }
-
 }
 
 
