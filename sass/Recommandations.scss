@@ -111,3 +111,84 @@
         }
     }
 }
+
+
+.recommandationsAr{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $colorP;
+    &__title{
+        color: $colorW;
+        text-align: center;
+    }
+    &__para{
+        color: $colorW;
+        text-align: right;
+        font-weight: 700;
+        margin: 20px 170px;
+    }
+    &__wrapperAr{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+.wrapperAr{
+    &__left{
+        grid-area: 1/2;
+        display: grid;
+        grid-template-columns: 90% 10%;
+    }
+    &__left--war1,&__left--war2,&__left--war3,&__left--war4,&__left--war5{
+        color: $colorS;
+        font-weight: 900;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: 2/3;
+    }
+    &__left--rec1,&__left--rec2,&__left--rec3,&__left--rec4,&__left--rec5{
+        color: $colorW;
+        grid-column: 1/2;
+        text-align: right;
+    }
+    &__left--rec1{
+        grid-area: 1/1;
+    }
+    &__left--rec2{
+        grid-area: 2/1;
+    }
+    &__left--rec3{
+        grid-area: 3/1;
+    }
+    &__left--rec4{
+        grid-area: 4/1;
+    }
+    &__left--rec5{
+        grid-area: 5/1;
+    }
+    &__right{
+        font-size: 20px;
+        text-align: center;
+        grid-area: 1/1;
+        margin-left: auto;
+        margin-right: auto;
+        &--appelez{
+            color: $colorS;
+        }
+        &--pr1,&--pr2,&--pr3{
+            display: block ;
+            background-color: $colorS;
+            color: $colorP;
+            font-weight: 900;
+            margin-top: 10px;
+        }
+        &--link{
+            color: $colorW;
+        }
+        &--link:hover{
+            color: $colorS;
+        }
+    }
+}
