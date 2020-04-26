@@ -1,201 +1,60 @@
-.war{
-    color: $colorS;
-    font-weight: bold;
-    padding-right: 20px;
-}
 .recommandations{
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $colorP;
     &__title{
-        color:$colorW;
+        color: $colorW;
         text-align: center;
-        padding-top: 32px;
-        padding-bottom: 20px;
-        font-size: 24px;
     }
     &__para{
-        display: inline;
-        margin-left: 200px;
         color: $colorW;
-        font-size: 20px;
-        
-    }
-    &__appelez{
-        color: $colorS;
-        font-size: 24px;
+        text-align: center;
+        margin:20px 600px 20px 0px;
         font-weight: 700;
-        float: right;
-        margin-right: 365px;
     }
     &__wrapper{
-        margin: 10px 120px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
         display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+        grid-template-columns: 50% 50%;
     }
-    &__wrapper p{
-        color: $colorW;
-        font-weight: 700;
+}
+.wrapper{
+    &__left{
+        grid-area: 1/1;
+        display: grid;
+        grid-template-columns: 10% 90%;
     }
-    &__wrapper--rec2{
-        grid-area: 2/1;
-    }
-    &__wrapper--rec3{
-        grid-area: 3/1;
-    }
-    &__wrapper--rec4{
-        grid-area: 4/1;
-    }
-    &__wrapper--rec5{
-        grid-area: 5/1;
-    }
-    &__wrapper--num1{
-        background-color: $colorS;
-        width: 200px;
-        height: 40px;
-        margin-bottom: 120px;
-        text-align: center;
-    }
-    &__wrapper--pr1{
-        font-size: 20px;
-        color: $colorP;
-    }
-    &__wrapper--num2{
-        background-color: $colorS;
-        width: 200px;
-        height: 40px;
-        text-align: center;
-    }
-    &__wrapper--pr2{
-        font-size: 20px;
-        color: $colorP;
-    }
-    &__wrapper--num3{
-        background-color: $colorS;
-        width: 200px;
-        height: 40px;
-        text-align: center;
-
-    }
-    &__wrapper--pr3{
-        font-size: 20px;
-        color: $colorP;
-    }
-    &__wrapper--link{
-        text-decoration: none;
-        color: $colorW;
-        font-weight: bold;
-        margin-left: 32px;
-    }
-    &__wrapper--link:hover{
+    &__left--war1,&__left--war2,&__left--war3,&__left--war4,&__left--war5{
         color: $colorS;
-        
+        margin-left: auto;
+        margin-right: auto;
     }
-}
-
-@media only screen and (max-width: 575px){
-    .recommandations{
-        &__para{
-            margin: 0px;
-            font-size: 15px;
-            text-align: center;
-            display: block;
-            font-weight: 700;
+    &__left--rec1,&__left--rec2,&__left--rec3,&__left--rec4,&__left--rec5{
+        color: $colorW;
+    }
+    &__right{
+        font-size: 20px;
+        text-align: center;
+        grid-area: 1/2;
+        margin-left: auto;
+        margin-right: auto;
+        &--appelez{
+            color: $colorS;
         }
-        &__wrapper{
-            width: 80%;
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        &__appelez{
-            display: none;
-            margin: 0px;
-        }
-        &__wrapper--num1,&__wrapper--num2,&__wrapper--num3{
-            margin-right: auto;
-            margin-left: auto;
-        }
-        &__wrapper--rec1 {
-            grid-area: 1/1;
-        }
-        &__wrapper--rec2 {
-            line-height: 1.3em;
-            grid-area: 2/1;
-        }
-        &__wrapper--rec3 {
-            grid-area: 3/1;
-        }
-        &__wrapper--rec4 {
-            grid-area: 4/1;
-            line-height: 1.3em;
-        }
-        &__wrapper--rec5 {
-            grid-area: 5/1;
-            line-height: 1.3em;
-        }
-        &__wrapper--num1{
-            margin-top: 20px;
-            grid-area: 6/1;
-            grid-column: 1/2;
-        }
-        &__wrapper--num2{
-            margin-top: 20px;
-            grid-area: 7/1;
-            grid-column: 1/2;
-        }
-        &__wrapper--num3{
-            margin-top: 20px;
-            grid-area: 8/1;
-            grid-column: 1/2;
-        }
-        &__wrapper--num4{
+        &--pr1,&--pr2,&--pr3{
+            display: block ;
+            background-color: $colorS;
+            color: $colorP;
+            font-weight: 900;
             margin-top: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            grid-area: 9/1;
-
-
-    }
-}
-.recommandations a{
-    margin: 0px;
-    
-}
-}
-
-@media (min-width: 575px)and(max-width: 1024px){
-    .recommandations{
-        &__appelez{
-            margin-right: 110px;
         }
-        &__wrapper{
-            display: grid;
-            grid-template-columns: 60% 40%;
-            grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-            margin: 0px;
-            width: 100%;
+        &--link{
+            color: $colorW;
         }
-        &__wrapper--rec1,&__wrapper--rec2,&__wrapper--rec3,&__wrapper--rec4,&__wrapper--rec5{
-            padding-left: 20px;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 1.4em;
-            padding-bottom: 30px;
-
-        }
-        &__para{
-            margin: 0px 20px;
-            width: 100%;
-            text-align: center;
-        
-        }
-        &__wrapper--num1,&__wrapper--num2,&__wrapper--num3,&__wrapper--num4{
-            margin: auto;
-        }
-        &__wrapper--link{
-            margin: 0px;
+        &--link:hover{
+            color: $colorS;
         }
     }
 }
