@@ -54,20 +54,29 @@
 
 @media only screen and (max-width: 575px){
     .footer{
+        &__logo{
+            width: 40%;
+            height: auto;
+        }
         &__wrapper{
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 100%;    
+            grid-template-rows: 70% 30%;    
             margin: 0px;
         }
         &__left{
-            margin: 20px 20px;
+            grid-area: 1/1;
+            margin: 20px auto;
         }
         &__left--title{
             font-weight: 900;
         }
         &__left--para{
             font-size: 0.8em;
+        }
+        &__right--list{
+            margin: 0px 60px;
+            padding-bottom: 30px;
         }
     }
 }
@@ -76,6 +85,8 @@
         &__logo{
             margin-top: 40px;
             margin-bottom: 40px;
+                width: 20%;
+                height: auto;
         }
         &__wrapper{
             display: grid;

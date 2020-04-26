@@ -606,22 +606,31 @@ button:hover {
   height: 35px; }
 
 @media only screen and (max-width: 575px) {
+  .footer__logo {
+    width: 40%;
+    height: auto; }
   .footer__wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    grid-template-rows: 70% 30%;
     margin: 0px; }
   .footer__left {
-    margin: 20px 20px; }
+    grid-area: 1/1;
+    margin: 20px auto; }
   .footer__left--title {
     font-weight: 900; }
   .footer__left--para {
-    font-size: 0.8em; } }
+    font-size: 0.8em; }
+  .footer__right--list {
+    margin: 0px 60px;
+    padding-bottom: 30px; } }
 
 @media (min-width: 575px) and (max-width: 1024px) {
   .footer__logo {
     margin-top: 40px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    width: 20%;
+    height: auto; }
   .footer__wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
