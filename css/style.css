@@ -475,7 +475,8 @@ button:hover {
   background-color: #1078AD; }
   .recommandationsAr__title {
     color: #FFFFFF;
-    text-align: center; }
+    text-align: center;
+    font-size: 24px; }
   .recommandationsAr__para {
     color: #FFFFFF;
     text-align: right;
