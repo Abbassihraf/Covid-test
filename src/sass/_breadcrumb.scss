@@ -5,22 +5,25 @@
   background-size: cover;
   padding-top: 115px;
   padding-bottom: 26px;
+  direction: rtl;
   .home_banner_inner {
     h5 {
       font: 700 27px $sand;
       color: $baseColor;
       margin-bottom: 13px;
       margin-top: 35px;
+      text-align: right;
     }
     h3 {
       font: 700 60px/70px $sand;
       letter-spacing: -1.5px;
-      margin-right: -67px;
       margin-bottom: 20px;
+      text-align: right;
     }
     p {
       font: 400 21px/36px $sand;
       margin-bottom: 25px;
+      text-align: right;
     }
   }
   img {
@@ -46,10 +49,13 @@
     .media-body {
       h4 {
         font: 700 21px $sand;
+        text-align: right;
+        margin-right: 16px;
       }
       p {
         font: 500 14px $sand;
         margin-bottom: 0px;
+        margin-right: 16px;
       }
     }
   }
