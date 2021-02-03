@@ -4081,7 +4081,6 @@ input[type="submit"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -9495,5 +9494,9 @@ a.text-dark:hover {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.navbar-collapse{
+  text-align: right !important;
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
