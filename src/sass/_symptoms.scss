@@ -1,0 +1,100 @@
+.symptoms_area {
+    background: url(../images/symptoms-bg.jpg) no-repeat scroll
+      center center;
+    background-size: cover;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 2;
+    padding-top: 64px;
+    direction: rtl;
+    .container {
+      position: relative;
+    }
+    .nav {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      z-index: -1;
+      li {
+        &:first-child {
+          position: absolute;
+          left: -150px;
+          top: 49%;
+          animation: rotate 3s linear 1s infinite;
+        }
+        &:nth-child(2) {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          animation: rotate 4s linear 1s infinite;
+          margin-top: -60px;
+          margin-left: -102px;
+        }
+        &:last-child {
+          position: absolute;
+          right: -135px;
+          top: 50%;
+          animation: covidmove 6s linear 0.3s infinite;
+        }
+      }
+    }
+    .title_text {
+      display: block;
+      margin-bottom: 10px;
+      text-align: right;
+      h5 {
+        color: $baseColor;
+        font: 500 24px $sand;
+      }
+      h2 {
+        font: 700 32px/60px $sand;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .symptoms_inner {
+    margin-bottom: -30px;
+    .col-lg-6 {
+      height: 100%;
+      &:first-child {
+        .symptoms_item {
+          margin-top: 50px;
+        }
+      }
+      &:last-child {
+        .symptoms_item {
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+  .symptoms_item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 40px 0px rgba(51, 48, 78, 0.15);
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 12px;
+    .media {
+      .d-flex {
+        max-width: 180px;
+        width: 100%;
+      }
+      .media-body {
+        h4 {
+          font: 700 24px $sand;
+          margin-bottom: 13px;
+          margin-top: 15px;
+          text-align: right;
+        }
+        p {
+          margin-bottom: 0px;
+          font: 400 14px/24px $sand;
+          text-align: right;
+        }
+      }
+    }
+  }
