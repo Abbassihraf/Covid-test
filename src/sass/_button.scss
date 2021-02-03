@@ -26,14 +26,14 @@
     font-weight: bold;
     position: relative;
     top: 1px;
-    left: 0px;
+    right: 0px;
     @include transition;
   }
   &:hover {
     background: $baseColor;
     color: #fff;
     i {
-      left: 5px;
+      right: 5px;
     }
   }
 }

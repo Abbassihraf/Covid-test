@@ -1,0 +1,84 @@
+.check_now_area {
+    background: #58547e;
+    .left {
+      .media {
+        min-height: 180px;
+        .d-flex {
+          width: 172px;
+          text-align: center;
+          position: relative;
+          justify-content: center;
+          padding-top: 20px;
+  
+          img {
+            text-align: center;
+            animation: rotate 3s linear 1s infinite;
+            &:nth-child(2) {
+              position: absolute;
+              left: 4px;
+              bottom: -5px;
+            }
+            &:nth-child(3) {
+              position: absolute;
+              right: 0px;
+              bottom: -30px;
+            }
+          }
+        }
+        .media-body {
+          align-self: center;
+          padding-left: 25px;
+          h4 {
+            color: #fff;
+            font: 700 36px $sand;
+          }
+          p {
+            color: #d0cced;
+            margin-bottom: 0px;
+            font: 500 18px $sand;
+            text-align: right;
+          }
+        }
+      }
+    }
+    .right {
+      align-self: center;
+    }
+    &.check_now_box {
+      border-radius: 20px;
+      background: $baseColor;
+      padding-right: 40px;
+      margin-top: -62px;
+      .left {
+        .media {
+          .media-body {
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .right {
+        .icon_btn {
+          background: $pfont;
+          color: #fff;
+          padding: 0px 55px;
+        }
+      }
+    }
+    &.full_widget_check {
+      border-radius: 0px;
+      margin: 0px;
+      padding-right: 0px;
+      background: url(../images/check-now-bg.jpg) no-repeat scroll center center;
+      background-size: cover;
+      direction: rtl;
+    }
+  }
+  .check_box {
+    margin-bottom: 80px;
+    .check_now_area.check_now_box {
+      margin: 0px;
+      box-shadow: 0px 10px 40px 0px rgba(51, 48, 78, 0.15);
+    }
+  }
