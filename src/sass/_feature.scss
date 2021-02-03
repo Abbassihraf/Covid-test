@@ -8,28 +8,8 @@
     padding-top: 50px;
   }
   .home_ab_text {
-    margin-left: 70px;
-    position: relative;
-    &:before {
-      content: "";
-      width: 500%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      background: #f5f5f9;
-      position: absolute;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-      z-index: -1;
-    }
     .home_ab_text_inner {
-      margin-left: -70px;
-      position: relative;
-      padding-top: 45px;
-      padding-bottom: 80px;
       .home_ab_item {
-        margin-bottom: 27px;
         h6 {
           color: $baseColor;
           font: 500 18px $sand;
@@ -38,9 +18,11 @@
         h4 {
           font: 700 30px $sand;
           margin-bottom: 13px;
+          text-align: right;
         }
         p {
           margin-bottom: 0px;
+          text-align: right;
         }
         &:last-child {
           margin-bottom: 0px;
