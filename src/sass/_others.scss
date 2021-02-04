@@ -285,51 +285,7 @@
   }
 }
 
-.work_area {
-  padding-top: 122px;
-}
-.work_content {
-  .main_title {
-    margin-bottom: 30px;
-    h5 {
-      font-size: 18px;
-    }
-    h2 {
-      font-size: 36px;
-    }
-  }
-}
-.work_list {
-  list-style: none;
-  padding: 0;
-  li {
-    counter-increment: step-counter;
-    font-size: 16px;
-    line-height: 35px;
-    font-weight: 400;
-    color: $pfont;
-    padding-left: 50px;
-    position: relative;
-    margin-bottom: 17px;
-    &:before {
-      content: counter(step-counter);
-      font-family: $sand;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: $baseColor;
-      text-align: center;
-      line-height: 32px;
-      color: #fff;
-      position: absolute;
-      left: 0;
-      top: 2px;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
+
 /* End work_area css
   ============================================================================================ */
 
