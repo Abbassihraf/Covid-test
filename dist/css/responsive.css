@@ -39,6 +39,27 @@
   }
 }
 
+@media (max-width: 768px){
+  .main_menu .navbar .navbar-collapse{
+    background-color: #f0f0f6;
+    margin-right: 0px !important;
+  }
+  .main_menu .navbar .nav.navbar-nav li{
+    margin-right: 0px !important;
+    height: 56px !important;
+  }
+  .main_menu .navbar .nav.navbar-nav li:last-child{
+    margin-bottom: 16px !important;
+  }
+
+  .navbar-brand{
+    padding-top: 0px;
+  }
+  .navbar{
+    padding: 1rem 0rem !important;
+  }
+}
+
 @media (max-width: 1400px) {
   .main_menu .navbar .navbar-collapse {
     margin-right: 80px;
@@ -215,7 +236,7 @@
     margin-top: 5px;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 991px) {
   .navbar-light .navbar-toggler {
     display: none;
   }
