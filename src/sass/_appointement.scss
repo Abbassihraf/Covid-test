@@ -1,0 +1,304 @@
+.appointment_box {
+    margin: 0px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 40px 0px rgba(51, 48, 78, 0.15);
+    text-align: left;
+    margin-bottom: -100px;
+    margin-top: 40px;
+    .appoinment_features {
+      background: #58547e;
+      padding: 40px;
+      overflow: hidden;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      position: relative;
+      z-index: 1;
+      .shape {
+        position: absolute;
+        z-index: -1;
+        &.one {
+          right: -87px;
+          top: -80px;
+        }
+        &.two {
+          top: 175px;
+          left: -55px;
+          animation: covidmove 6s linear 0.3s infinite;
+        }
+        &.three {
+          right: 8px;
+          top: 225px;
+          animation: rotate 1.5s linear 1s infinite;
+        }
+        &.four {
+          right: -60px;
+          bottom: 85px;
+        }
+        &.five {
+          left: -50px;
+          bottom: -50px;
+          animation: rotate 3s linear 1.5s infinite;
+        }
+        &.six {
+          right: 40px;
+          bottom: -40px;
+        }
+      }
+      h2 {
+        color: #fff;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      p {
+        color: #c4c0e4;
+      }
+      .appoinment_features_item {
+        margin-top: 50px;
+        i {
+          font-size: 42px;
+          color: $baseColor;
+          margin-left: 20px;
+        }
+        h6 {
+          color: #fff;
+          font-size: 21px;
+          margin-bottom: 0;
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .appoinment_form {
+    padding: 40px 25px 16px;
+    .form-group {
+      position: relative;
+      padding-top: 15px;
+      margin-bottom: 23px;
+      text-align: right;
+    }
+    .form-control {
+      border-radius: 0px;
+      box-shadow: none;
+      font-weight: 500;
+      font-size: 16px;
+      border: 0px;
+      border-bottom: 2px solid #58547e;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      background: transparent;
+      @include placeholder {
+        color: #58547e;
+      }
+      &:focus,
+      &.animated {
+        font-weight: 700;
+        & + label {
+          top: 0px;
+          font-size: 11px;
+          color: #78749e;
+        }
+        & + div {
+          & + label {
+            top: 0px;
+            font-size: 11px;
+            color: #78749e;
+          }
+        }
+      }
+    }
+    textarea {
+      &.form-control {
+        height: 170px;
+        text-align: right;
+      }
+    }
+    label {
+      font-weight: 500;
+      font-size: 16px;
+      color: #58547e;
+      position: absolute;
+      top: 20px;
+      line-height: 16px;
+      margin-bottom: 0;
+      font-family: $sand;
+      transition: all 0.2s linear;
+      cursor: pointer;
+      i {
+        margin-left: 8px;
+      }
+    }
+    .input-group {
+      padding-top: 0;
+      height: 55px;
+      input {
+        position: absolute;
+        bottom: 0;
+        &.animated {
+          background: #fff;
+        }
+      }
+      .input-group-text {
+        padding: 0px 0px 0px 12px;
+        background: transparent;
+        font-size: 16px;
+        border: 0px;
+      }
+      .text_div {
+        position: absolute;
+        padding-left: 38px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 58px;
+        height: 100%;
+        color: #58547e;
+        font-weight: 500;
+        top: 0;
+        &:before {
+          content: "\ec3a";
+          font-family: "Linearicons";
+          font-size: 12px;
+          position: absolute;
+          right: 12px;
+          top: 2px;
+        }
+      }
+    }
+    .select_conversation_inner {
+      padding-top: 0px;
+      h6 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #58547e;
+        margin-bottom: 10px;
+      }
+    }
+    .select_conversation {
+      display: inline-block;
+      input[type="radio"] {
+        width: 0px;
+        visibility: hidden;
+        display: none;
+        &:checked {
+          & + label {
+            color: $baseColor;
+            &:before {
+              transform: scale(1);
+            }
+            &:after {
+              border-color: $baseColor;
+            }
+          }
+        }
+      }
+      label {
+        position: relative;
+        margin-bottom: 0;
+        font-family: $sand;
+        font-size: 16px;
+        font-weight: 500;
+        color: #58547e;
+        padding-left: 25px;
+        top: 0;
+        left: 0;
+        &:before {
+          content: "";
+          height: 7px;
+          width: 7px;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 4px;
+          background: $baseColor;
+          margin-top: -4px;
+          transform: scale(0);
+          transition: all 0.2s linear;
+        }
+        &:after {
+          content: "";
+          display: table-caption;
+          width: 15px;
+          height: 15px;
+          left: 0;
+          top: 0;
+          border: 1px solid #58547e;
+          position: absolute;
+          border-radius: 50%;
+          transition: 240ms;
+        }
+      }
+      & + .select_conversation {
+        margin-right: 28px;
+      }
+    }
+    .checkbox_field {
+      padding-top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .checkbox {
+        position: relative;
+        label {
+          position: relative;
+          top: 0;
+          left: 0;
+          font-size: 14px;
+          font-weight: 500;
+          color: #58547e;
+          padding-left: 34px;
+          line-height: 24px;
+          span {
+            font-weight: 700;
+          }
+          &:before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            background: #58547e;
+            position: absolute;
+            left: 0;
+            top: 0px;
+          }
+          &:after {
+            content: "";
+            background: url("../images/checked-icon.png") no-repeat center center;
+            position: absolute;
+            left: 6px;
+            width: 12px;
+            height: 10px;
+            top: 7px;
+            color: $baseColor;
+            transform: scale(0);
+            transition: all 0.2s linear;
+          }
+        }
+      }
+      input[type="checkbox"] {
+        width: 0px;
+        visibility: hidden;
+        display: none;
+        &:checked {
+          & + label {
+            &:after {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+      .green_btn {
+        border: 0px;
+        font-size: 18px;
+        line-height: 45px;
+        padding: 0px 37px;
+      }
+    }
+  }
