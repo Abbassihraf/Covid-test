@@ -2,9 +2,7 @@
     background: #58547e;
     .left {
       .media {
-        min-height: 180px;
         .d-flex {
-          width: 172px;
           text-align: center;
           position: relative;
           justify-content: center;
@@ -31,6 +29,7 @@
           h4 {
             color: #fff;
             font: 700 36px $sand;
+            text-align: right;
           }
           p {
             color: #d0cced;
@@ -43,6 +42,7 @@
     }
     .right {
       align-self: center;
+      padding-left: 0px !important;
     }
     &.check_now_box {
       border-radius: 20px;

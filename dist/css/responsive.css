@@ -237,6 +237,7 @@
   }
 }
 @media (min-width: 991px) {
+  
   .navbar-light .navbar-toggler {
     display: none;
   }
@@ -633,6 +634,13 @@
     margin-bottom: -30px;
   }
 }
+
+@media (min-width: 768px) and (max-width:1023px){
+  .symptoms_inner .col-lg-6:last-child .symptoms_item{
+    margin-top: 0px;
+  }
+
+}
 @media (max-width: 767px) {
   .home_banner_area .home_banner_inner h3 {
     font: 700 36px/46px "Quicksand", sans-serif;
@@ -653,6 +661,16 @@
   }
   .home_banner_inner img {
     width: 430px;
+    display: none;
+  }
+  .symptoms_area{
+    padding-top: 24px;
+  }
+  .symptoms_inner .col-lg-6:last-child .symptoms_item{
+    margin-top: 0px;
+  }
+  .symptoms_inner .col-lg-6:first-child .symptoms_item{
+    margin-top: 32px;
   }
   .home_banner_area {
     padding-top: 80px;
