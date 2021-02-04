@@ -1,11 +1,62 @@
 @@include('includes/head.html')
 
 <div class="body_wrapper">
-    @@include('includes/nav.html')
+        @@include('includes/nav.html')
+        <section class="breadcrumb_area">
+
+
+
+<section class="covid-checker">
+    <div class="container">
+        <div class="wrapper">
+            <section class="stepper">
+                <h1 class="select">معلومات</h1>
+                <h1>الإختبار</h1>
+                <h1>النتائج</h1>
+            </section>
+        </div>
+        <section class="Préambule">
+            <h1>تمهيد</h1>
+            <p class="Préambule--para1">هاد التطبيق مجاني، درناه باش نسهلو على الناس لي
+                عندها إصابة بڤيروس كورونا المستجد يعرفو الحالة ديالهم و آش خصهم يديرو. منقدوش
+                نضمنو بنسبة 100% دقة المعلومات لي تيعطيها هاد التطبيق. يقر المستخدم بأن التطبيق
+                ، بما في ذلك الاختبار و المعلومات الأخرى لي فيه، لا تشكل توصية او فحص او وصفة
+                طبية او اي حاجة عندها طبيعة طبية.</p>
+            <hr>
+                <p class="Préambule--para2">
+                    هاد التطبيق متيعوضش الطبيب ديالك لي يقدر يعطيك نصيحة أفضل. المعلومات ديال هاد
+                    التطبيق هي المستوى الاول باش نقدو نحددو الحالات الممكنة.
+                </p>
+
+            </section>
+            <div class="menu_btm">
+            <button class="start-btn green_btn"><i class="linearicons-pulse"></i>نبداو الإختبار</button>
+            </div>
+            <section class="questionnaire">
+                <div class="progress">
+                    <h5>
+                        <span class="question-number">1</span>/22</h5>
+                    <div class="progress__bar">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="animation">
+                    <h1 class="question"></h1>
+                    <div class="answer-inputs"></div>
+                    <div class="btn-container">
+                        <button class="previous">السؤال لقبل</button>
+                        <button class="next ">السؤال التالي</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+    @@include('includes/hand-washing.html')
+    @@include('includes/faq.html')
 
 </div>
-
-
 
 
 @@include('includes/footer.html')
