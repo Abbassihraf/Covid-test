@@ -810,26 +810,7 @@ blockquote {
   }
 }
 
-.error_area {
-  padding-top: 200px;
-  padding-bottom: 170px;
-  background: #f5f5f9;
-  position: relative;
-  z-index: 1;
-  .overlay_bg {
-    background: url("../images/error_bg.png") no-repeat scroll center 0 / cover;
-  }
-}
-.error_text {
-  font-size: 165px;
-  color: #d22e6a;
-  font-weight: 700;
-  margin-bottom: 35px;
-  img {
-    vertical-align: text-top;
-    animation: rotate 4s linear infinite;
-  }
-}
+
 /* End error_area css
   ============================================================================================ */
 

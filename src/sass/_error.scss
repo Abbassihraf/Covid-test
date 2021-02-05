@@ -1,0 +1,30 @@
+.error_area {
+    padding-top: 200px;
+    padding-bottom: 170px;
+    background: #f5f5f9;
+    position: relative;
+    z-index: 1;
+    background: url("../images/error_bg.png") no-repeat scroll center 0 / cover !important;
+  }
+  .error_text {
+    font-size: 165px;
+    color: #d22e6a;
+    font-weight: 700;
+    margin-bottom: 35px;
+    img {
+      vertical-align: text-top;
+      animation: rotate 4s linear infinite;
+    }
+  }
+
+  .search_found_text p{
+      width: 56%;
+      margin: 32px auto;
+      font-size: 20px;
+  }
+
+  .search_found_text p a {
+    color: #01cfbe;
+    position: relative;
+    font-weight: 700;
+  }
