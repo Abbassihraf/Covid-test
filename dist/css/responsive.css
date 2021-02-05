@@ -988,6 +988,15 @@
   }
 }
 @media (max-width: 575px) {
+  .prevention_banner .prevention_text .nav li{
+    margin-left: 0px;
+  }
+  .prevent_area.prevent_right .prevent_details{
+    margin-right: 0px;
+  }
+  .prevent_area.prevent_right{
+    padding-bottom: 0px;
+  }
   .main_menu .navbar .navbar-brand img {
     width: 135px;
     position: relative;
@@ -1197,6 +1206,7 @@
   .washing_process_area {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 40px;
   }
   .washing_process_area .main_title {
     margin-bottom: 50px;
