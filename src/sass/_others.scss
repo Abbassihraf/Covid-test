@@ -1,122 +1,8 @@
-.about_corona_aera {
-  direction: rtl;
-  .home_ab_img {
-    padding-top: 35px;
-    position: relative;
-  }
-  .home_ab_text {
-    .home_ab_text_inner {
-      padding-top: 35px;
-      padding-bottom: 52px;
-      .home_ab_item {
-        h4 {
-          font-size: 36px;
-          padding-bottom: 15px;
-        }
-      }
-    }
-    .symptoms_about_inner {
-      padding-right: 54px;
-      padding-top: 50px;
-      .home_ab_item {
-        h6 {
-          font-size: 24px;
-        }
-        h4 {
-          font-size: 48px;
-        }
-        .green_btn {
-          margin-top: 24px;
-        }
-      }
-    }
-  }
-}
-.covid_img {
-  position: absolute;
-  &.one {
-    right: 45px;
-    bottom: 35px;
-    animation: covidmove 5s infinite;
-  }
-  &.two {
-    bottom: 80px;
-    left: 25px;
-    animation: covidmove 6s linear 0.3s infinite;
-  }
-  &.three {
-    left: 45px;
-    bottom: 225px;
-    animation: rotate 1s linear 0.3s infinite;
-  }
-  &.four {
-    right: 25px;
-    bottom: 198px;
-    animation: covidmove 6s linear 0.3s infinite;
-  }
-  &.five {
-    right: 0;
-    top: 200px;
-  }
-  &.six {
-    left: 0px;
-    top: 190px;
-  }
-  &.seven {
-    left: 105px;
-    top: 60px;
-    animation: rotate 1s linear 1s infinite;
-  }
-  &.eight {
-    right: 60px;
-    top: 90px;
-    animation: covidmove 6s linear 0.3s infinite;
-  }
-}
 
-@keyframes covidmove {
-  0% {
-    transform: translateY(0px) rotate(180deg);
-  }
-  25% {
-    transform: translateY(-50px) translateX(-10px);
-  }
-  50% {
-    transform: translateY(-50px) translateX(-10px) rotate(-45deg);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
-@keyframes scale {
-  0% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1.02);
-  }
-}
+
 /* End about_checker_area css
   ============================================================================================ */
-.about_checker_inner {
-  border-radius: 20px;
-  box-shadow: 0px 10px 40px 0px rgba(51, 48, 78, 0.15);
-  background: $baseColor;
-  padding: 0px 40px 0px 15px;
-  .left .media .media-body p {
-    color: #fff;
-  }
-  .icon_btn {
-    background: #57537d;
-    color: #fff;
-    padding: 0px 55px;
-  }
-}
+
 /* End about_checker_area css
   ============================================================================================ */
 
@@ -235,59 +121,7 @@
 /* End coronavirus_question_area css
   ============================================================================================ */
 
-/* Start common_question_area css
-  ============================================================================================ */
 
-.common_question_item {
-  border-radius: 10px;
-  background: #f5f5f9;
-  padding: 40px 50px 50px;
-  h3 {
-    font-size: 30px;
-    line-height: 41px;
-    margin-bottom: 15px;
-  }
-}
-.question_list {
-  li {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 36px;
-    a {
-      color: $pfont;
-    }
-  }
-}
-.border_bottom {
-  width: 100%;
-  height: 1px;
-  background: #dedee4;
-}
-.more_question_inner {
-  padding-top: 75px;
-}
-.more_question_item {
-  margin-bottom: 65px;
-  h3 {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-  .question_list {
-    margin-bottom: 20px;
-    li {
-      line-height: 24px;
-      font-size: 16px;
-      font-weight: 400;
-      & + li {
-        margin-top: 12px;
-      }
-    }
-  }
-}
-
-
-/* End work_area css
-  ============================================================================================ */
 
 /* Start virus checker css
   ============================================================================================ */
@@ -786,141 +620,9 @@ input[type="number"] {
     }
   }
 }
-/* End sample page area css
-  ============================================================================================ */
 
-/* Start search page area css
-  ============================================================================================ */
-.search_page_area {
-  padding: 60px 0px 90px;
-}
-.search_inner {
-  padding-right: 30px;
-}
-.search_item {
-  img {
-    border-radius: 10px;
-    margin-right: 30px;
-  }
-  .media-body {
-    padding-top: 10px;
-    h3 {
-      font-size: 24px;
-      color: $pfont;
-      margin-bottom: 15px;
-      transition: color 0.2s linear;
-      &:hover {
-        color: $baseColor;
-      }
-    }
-    p {
-      margin-bottom: 8px;
-      text-align: justify;
-    }
-    .text_btn {
-      transition: color 0.2s linear;
-      &:hover {
-        color: $pfont;
-      }
-    }
-  }
-  & + .search_item {
-    margin-top: 50px;
-  }
-}
 
-/* End search page area css
-  ============================================================================================ */
 
-/* Start search found area css
-  ============================================================================================ */
-
-.search_found_area {
-  background: #f5f5f9;
-  height: 100vh;
-  position: relative;
-  min-height: 660px;
-  z-index: 1;
-  .overlay_bg {
-    background: url("../images/search_map.png") no-repeat scroll center left /
-      cover;
-  }
-  .section_vertical_align {
-    width: 100%;
-    height: 100%;
-    padding-top: 200px;
-    padding-bottom: 70px;
-    display: flex;
-    align-items: center;
-  }
-  .footer_copyright {
-    padding-top: 190px;
-    padding-bottom: 0px;
-    background: transparent;
-  }
-}
-.search_found_text {
-  max-width: 575px;
-  margin: 0 auto;
-  .icon {
-    font-size: 98px;
-    color: #58547e;
-    margin-bottom: 12px;
-    display: inline-block;
-  }
-  h2 {
-    font-size: 48px;
-    line-height: 72px;
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 16px;
-    line-height: 30px;
-    a {
-      color: $baseColor;
-      position: relative;
-      font-weight: 700;
-      &:before {
-        content: "";
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        bottom: 0;
-        background: $baseColor;
-      }
-    }
-  }
-  .search-form {
-    padding-top: 40px;
-    .form-control {
-      background: transparent;
-      border-radius: 0px;
-      padding: 15px;
-      border: 0px;
-      border-bottom: 2px solid $pfont;
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: 600;
-      box-shadow: none;
-      @include placeholder {
-        color: #58547e;
-      }
-    }
-    button {
-      font-size: 24px;
-      background: transparent;
-      border: 0px;
-      padding: 0px;
-      position: absolute;
-      right: 7px;
-    }
-  }
-}
-/* End search found area css
-  ============================================================================================ */
-
-/* Start typrography page css
-  ============================================================================================ */
 .typrography_page {
   padding: 55px 0px 125px;
 }
@@ -1107,10 +809,7 @@ blockquote {
     margin-top: 0;
   }
 }
-/* End check_box_two css
-  ============================================================================================ */
-/* Start error_area css
-  ============================================================================================ */
+
 .error_area {
   padding-top: 200px;
   padding-bottom: 170px;

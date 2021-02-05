@@ -152,3 +152,187 @@
         }
     }
 }
+
+.home_about_corona {
+    padding-top: 50px;
+    .home_ab_img {
+        padding-top: 50px;
+    }
+    .home_ab_text {
+        .home_ab_text_inner {
+            .home_ab_item {
+                h6 {
+                    color: $baseColor;
+                    font: 500 18px $sand;
+                    margin-bottom: 4px;
+                }
+                h4 {
+                    font: 700 30px $sand;
+                    margin-bottom: 13px;
+                    text-align: right;
+                }
+                p {
+                    margin-bottom: 0;
+                    text-align: right;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                    h4 {
+                        margin-bottom: 3px;
+                    }
+                    p {
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+        }
+        &.how_to_use {
+            .home_ab_text_inner {
+                padding-top: 40px;
+                .home_ab_item {
+                    h4 {
+                        font: 700 24px $sand;
+                        margin-bottom: 8px;
+                    }
+                    p {
+                        font-style: italic;
+                    }
+                    .nav {
+                        li {
+                            margin-bottom: 15px;
+                            a {
+                                padding-left: 25px;
+                                position: relative;
+                                display: block;
+                                font: 400 16px/28px $sand;
+                                color: $pfont;
+                                i {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 6px;
+                                    font-size: 16px;
+                                    color: $baseColor;
+                                }
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.symptom_instruction_text {
+    padding-top: 40px;
+    h4 {
+        font: 700 24px $sand;
+        margin-bottom: 8px;
+    }
+}
+
+.about_corona_aera {
+  direction: rtl;
+  .home_ab_img {
+    padding-top: 35px;
+    position: relative;
+  }
+  .home_ab_text {
+    .home_ab_text_inner {
+      padding-top: 35px;
+      padding-bottom: 52px;
+      .home_ab_item {
+        h4 {
+          font-size: 36px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+    .symptoms_about_inner {
+      padding-right: 54px;
+      padding-top: 50px;
+      .home_ab_item {
+        h6 {
+          font-size: 24px;
+        }
+        h4 {
+          font-size: 48px;
+        }
+        .green_btn {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+}
+
+.covid_img {
+  position: absolute;
+  &.one {
+    right: 45px;
+    bottom: 35px;
+    animation: covidmove 5s infinite;
+  }
+  &.two {
+    bottom: 80px;
+    left: 25px;
+    animation: covidmove 6s linear 0.3s infinite;
+  }
+  &.three {
+    left: 45px;
+    bottom: 225px;
+    animation: rotate 1s linear 0.3s infinite;
+  }
+  &.four {
+    right: 25px;
+    bottom: 198px;
+    animation: covidmove 6s linear 0.3s infinite;
+  }
+  &.five {
+    right: 0;
+    top: 200px;
+  }
+  &.six {
+    left: 0px;
+    top: 190px;
+  }
+  &.seven {
+    left: 105px;
+    top: 60px;
+    animation: rotate 1s linear 1s infinite;
+  }
+  &.eight {
+    right: 60px;
+    top: 90px;
+    animation: covidmove 6s linear 0.3s infinite;
+  }
+}
+
+@keyframes covidmove {
+  0% {
+    transform: translateY(0px) rotate(180deg);
+  }
+  25% {
+    transform: translateY(-50px) translateX(-10px);
+  }
+  50% {
+    transform: translateY(-50px) translateX(-10px) rotate(-45deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}

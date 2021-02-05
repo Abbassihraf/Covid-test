@@ -1,3 +1,110 @@
+.answers_area {
+  .main_title {
+    margin-bottom: 50px;
+  }
+}
+.question_list {
+  .accordion {
+    .card {
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 2px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      .card-header {
+        padding: 0px;
+        button {
+          display: block;
+          width: 100%;
+          text-align: left;
+          background: $pfont;
+          padding: 16.5px 18px;
+          font: 600 20px $sand;
+          padding-right: 65px !important;
+          position: relative;
+          border: none;
+          color: #fff;
+          text-decoration: none;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          transition: all 0ms ease;
+          i {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 10px;
+            height: 28px;
+            width: 28px;
+            border: 1px solid #9995bc;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            transform: rotate(180deg);
+            @include transition;
+          }
+          &.collapsed {
+            background: #f5f5f9;
+            color: $pfont;
+            transition-delay: 300ms;
+            i {
+              transform: rotate(0deg);
+            }
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+      .card-body {
+        background: $pfont;
+        padding-top: 0px;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 30px;
+        color: #c4c0e4;
+        .nav {
+          border-top: 1px solid #747099;
+          padding-top: 15px;
+          border-bottom: 0px;
+          li {
+            width: 100%;
+            margin-bottom: 11px;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+            a {
+              display: block;
+              padding: 0px 20px;
+              background: transparent;
+              border: none;
+              font: 500 16px/30px $sand;
+              color: #c4c0e4;
+              max-width: 280px;
+              &.active {
+                color: $baseColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.answer_details {
+  .tab-pane {
+    h4 {
+      font: 700 24px $sand;
+      margin-bottom: 17px;
+      margin-top: 7px;
+    }
+    p {
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
 .about_faq_area {
   padding: 56px 0px;
   direction: rtl;
@@ -45,3 +152,4 @@
   padding-top: 70px;
   padding-bottom: 80px;
 }
+
