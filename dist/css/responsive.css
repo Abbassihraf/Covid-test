@@ -31,18 +31,37 @@
   }
 }
 @media (max-width: 1440px) {
-  .about_cronacvirus_promo_area .shap_img li:nth-child(2) {
-    left: -70px;
-  }
+
   .maintenece_area .coming_soon_content {
     padding-top: 20px;
   }
 }
 
 @media (max-width: 768px){
+  .about_corona_aera .home_ab_text .home_ab_text_inner{
+    padding-bottom: 0px;
+  }
+  .about_features_item p{
+    text-align: justify;
+    text-align-last: center;
+  }
+  .check_now_area .right{
+    margin: auto;
+  }
+  .check_now_area{
+    padding-bottom: 1rem;
+  }
+  .home_ab_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .main_menu .navbar .navbar-collapse{
     background-color: #f0f0f6;
     margin-right: 0px !important;
+  }
+  .about_cronacvirus_promo_area .bg_img{
+    display: none;
   }
   .main_menu .navbar .nav.navbar-nav li{
     margin-right: 0px !important;
@@ -481,11 +500,7 @@
     padding-right: 15px;
     padding-bottom: 50px;
   }
-  .about_cronacvirus_promo_area .bg_img {
-    position: relative;
-    width: 100%;
-    right: -25px;
-  }
+
   .about_cronacvirus_promo_area .shap_img li:nth-child(1) {
     display: none;
   }
@@ -639,9 +654,21 @@
   .symptoms_inner .col-lg-6:last-child .symptoms_item{
     margin-top: 0px;
   }
+  .home_about_corona .home_ab_text .home_ab_text_inner .home_ab_item:last-child p{
+    text-align: justify;
+  }
+  .coronavirus_promo_content p{
+    text-align: justify !important;
+  }
 
 }
 @media (max-width: 767px) {
+  .home_about_corona .home_ab_text .home_ab_text_inner .home_ab_item:last-child p{
+    text-align: justify;
+  }
+  .coronavirus_promo_content p{
+    text-align: justify !important;
+  }
   .home_banner_area .home_banner_inner h3 {
     font: 700 36px/46px "Quicksand", sans-serif;
   }
@@ -881,9 +908,7 @@
     .green_btn {
     margin-top: 0;
   }
-  .about_corona_aera .home_ab_text .home_ab_text_inner {
-    margin-left: -72px;
-  }
+
   .warning_box .media .d-flex {
     padding-right: 8px;
   }
@@ -1099,7 +1124,7 @@
     margin-bottom: 13px;
   }
   .home_about_corona .home_ab_text .home_ab_text_inner {
-    padding-bottom: 50px;
+    padding-bottom: 24px;
   }
   .world_wide_tracker {
     padding-bottom: 50px;
@@ -1262,7 +1287,7 @@
     display: none;
   }
   .footer_copyright {
-    padding: 40px 0px 55px 0px;
+    padding: 16px 0px;
   }
   .error_text {
     font-size: 120px;
@@ -1296,14 +1321,12 @@
   .breadcrumb_area .breadcrumb_text h6 {
     font: 700 16px/26px "Quicksand", sans-serif;
   }
-  .about_corona_aera .home_ab_text .home_ab_text_inner {
-    margin-left: -68px;
-  }
+
   .faq_inner .accordion .card .card-header button {
     position: relative;
   }
   .about_faq_area {
-    padding-top: 50px;
+    padding-top: 0px;
   }
   .about_features_area {
     padding: 50px 0px;
@@ -1315,7 +1338,7 @@
     font: 500 16px/28px "Quicksand", sans-serif;
   }
   .about_cronacvirus_promo_area {
-    padding: 50px 0px 20px;
+    padding: 0px !important;
   }
   .appoinment_form {
     padding: 40px 15px 16px;
@@ -1591,7 +1614,7 @@
     font: 500 14px "Quicksand", sans-serif;
   }
   .about_cronacvirus_promo_area .bg_img {
-    right: 0;
+    display: none;
   }
   .about_cronacvirus_promo_area .bg_img .shap_img_two li:nth-child(1) {
     left: -20px;
